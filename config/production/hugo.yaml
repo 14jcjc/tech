@@ -19,7 +19,8 @@ disableKinds:
 
 services:
   googleAnalytics:
-    ID: G-RWR5N47BDG
+    ID: G-WMM2BC7MHY
+    # ID: G-RWR5N47BDG
     # ID: G-GLB0HGKER4
   # Change it to your Disqus shortname before using
   # disqus:
