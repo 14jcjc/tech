@@ -54,6 +54,7 @@ params:
   env: production
   mainSections:
     - "ds-drills"
+    - dev
     - test
     # - post
 

@@ -289,13 +289,14 @@ https://chatgpt.com/c/678ef794-3970-8005-8183-b5f17ca3a0ce
 
 * Google Analytics
 
+- Googleサーチコンソールと連携する
 - IPアドレスを確認する (内部トラフィックの設定)
 
 - G-RWR5N47BDG (katsu-ds-lab.com)
 - G-GLB0HGKER4 (https://14jcjc.github.io/tech-blog/)
 
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GLB0HGKER4"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RWR5N47BDG"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}

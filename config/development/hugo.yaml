@@ -43,6 +43,7 @@ params:
   env: development
   mainSections:
     - "ds-drills"
+    - dev
     - test
     - post
 
