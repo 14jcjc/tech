@@ -2,7 +2,7 @@
 # Automatic translation from R to SQL query
 title: "R でデータベース操作 – dplyr で SQL クエリを自動生成する"
 slug: "r-sql-auto-query"
-date: 2025-01-05T00:03:13+09:00
+date: 2025-01-12T00:03:13+09:00
 draft: false
 # draft: true
 weight: 35

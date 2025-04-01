@@ -49,7 +49,6 @@ https://shiro-no-panda.com/mensa3/
 
 - db_get_query -> db_get_query
 - sql_render_ext -> sql_render_ext
-
 - supermarket.duckdb
 
 - GitHub リポジトリの変更、記事内の変更
@@ -269,8 +268,6 @@ http://localhost:1313/tech-blog/portfolio/
 - カテゴリーを改訂する
 - h2, h3 のレイアウト の2つ目を作成する
 
-* href-target-blank の名称を変更
-
 * widgets のタグ数の limit などを設定
 
 * Stack でページの表示が重くなったら検索機能を差し替える
@@ -287,10 +284,16 @@ https://chatgpt.com/c/678ef794-3970-8005-8183-b5f17ca3a0ce
 
 * カスタムドメイン, https
 
+* 公開時の設定
+
+- robots.txt: static/robots.txt を削除すること！
+- sitemap.xml: 編集する！
+
 * Google Analytics
 
 - Googleサーチコンソールと連携する
 - IPアドレスを確認する (内部トラフィックの設定)
+- データ保持期間を14ヶ月にする
 
 - G-RWR5N47BDG (katsu-ds-lab.com)
 - G-GLB0HGKER4 (https://14jcjc.github.io/tech-blog/)
@@ -309,6 +312,10 @@ https://chatgpt.com/c/678ef794-3970-8005-8183-b5f17ca3a0ce
 
 以下の TXT レコードを 14jcjc.github.io の DNS 設定にコピーします: 
 
+* アフィリエイトサービスへの登録
+
+Amazon、楽天、Yahoo、Googleアドセンス
+
 * 書籍のアフィリエイトリンクのデザイン
   カード型、ボタン型リンク
   Hugoのショートコードを活用して、クリックしやすいデザインにする
@@ -316,15 +323,12 @@ https://chatgpt.com/c/678ef794-3970-8005-8183-b5f17ca3a0ce
 * 各 platforms のアフィリエイトリンクを出力する shortcodes を作る
   参考: product-link.html
 
+* href-target-blank の名称を変更
+
 * コンテンツファイルに記述する問題文を data/k100/questions.yaml からゲットする.
 
 * 演習問題一覧ページを「番号順」にする。「難易度順」を作る. 
-
 * 各演習問題のページを作る. 
-
-* robots.txt
-
-公開時は static/robots.txt を削除すること！
 
 * リスト表示とシングル表示の上部にタグを付ける: https://bit.ly/40h5xGs
 

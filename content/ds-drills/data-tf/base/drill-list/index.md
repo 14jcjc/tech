@@ -1,7 +1,7 @@
 ---
 title: "[R & SQL] 演習問題一覧"
 slug: "drill-list"
-date: 2025-01-20T01:01:20+09:00
+date: 2025-02-23T01:01:20+09:00
 draft: false
 # draft: true
 weight: 20
