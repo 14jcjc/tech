@@ -136,7 +136,10 @@ languages:
           url: /privacy/
           weight: 60
           params: 
-            icon: info-square-rounded
+            icon: square-rounded-letter-p
+            # icon: hexagon-letter-p
+            # icon: circle-letter-p
+            # icon: info-square-rounded
 
         # - name: Links
         #   url: /links
@@ -239,6 +242,13 @@ languages:
           weight: 50
           params: 
             icon: search
+
+        - identifier: "Privacy Policy"
+          name: "Privacy Policy"
+          url: /privacy/
+          weight: 60
+          params: 
+            icon: square-rounded-letter-p
 
 module:
   mounts:

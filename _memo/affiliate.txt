@@ -15,16 +15,7 @@ Amazonアソシエイトでは、画像付きのテキストリンクの作成�
 一つの方法としては、「もしもアフィリエイト」というASP（アフィリエイト・サービス・プロバイダー）でAmazonと提携すると、画像付きのテキストリンクを作成できます。
 こちらのリンクは、Amazonだけでなく、楽天市場やYahoo!ショッピングのアフィリエイトリンクも同時に掲載できます。
 
-
-Amazonアソシエイト・プログラムの審査向けに、以下の文言を
-「Privacy Policy」に Google Analytics のものと合わせて記載したい。
-
-「Amazonのアソシエイトとして、［乙の名称を挿入］は適格販売により収入を得ています。」
-
-現在の「Privacy Policy」：
-https://katsu-ds-lab.com/privacy/
-
-* Privacy Policy にをメニューに追加する
+* Privacy Policy をメニューに追加する
 
 * フッターの編集：
 
