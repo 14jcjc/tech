@@ -1,0 +1,21 @@
+{{/*  katsu  */}}
+
+<article class="{{ if .Params.image }}has-image {{ end }}main-article">
+    {{ partial "article/components/header" . }}
+
+    {{/*  {{ printf "%v" .Params.ShowToc }}  */}}
+    {{/*  {{ printf "%s" (site.Param "ShowToc") }}  */}}
+    {{/*  katsu  */}}
+    
+    {{- if (.Param "ShowToc") }}
+    {{- partial "article/components/toc.html" . }}
+    {{- end }}
+
+    {{ partial "article/components/content" . }}
+
+    {{ partial "article/components/footer" . }}
+
+    {{ if or .Params.math .Site.Params.article.math }}
+        {{ partialCached "article/components/math.html" . }}
+    {{ end }}
+</article>

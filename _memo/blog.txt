@@ -92,6 +92,10 @@ Stackテーマはブログ向けなので、「記事」として整理すると
 
 - 演習問題の2つを draft にする (?) (アフィリエイト登録対策)
 
+- 「最終更新日」の表示
+  - ページのトップ
+  - リストページ
+
 - sitemap.xml の生成を無効にする
 disableKinds: 
   - sitemap
@@ -291,9 +295,9 @@ https://chatgpt.com/c/678ef794-3970-8005-8183-b5f17ca3a0ce
 
 * Google Analytics
 
-- Googleサーチコンソールと連携する
 - IPアドレスを確認する (内部トラフィックの設定)
 - データ保持期間を14ヶ月にする
+- Googleサーチコンソールと連携する
 
 - G-WMM2BC7MHY (katsu-ds-lab.com)
 - G-RWR5N47BDG (old, katsu-ds-lab.com)
@@ -311,7 +315,8 @@ https://chatgpt.com/c/678ef794-3970-8005-8183-b5f17ca3a0ce
 
 * Google Search Console
 
-以下の TXT レコードを 14jcjc.github.io の DNS 設定にコピーします: 
+以下の TXT レコードを katsu-ds-lab.com の DNS 設定にコピーします
+google-site-verification=Nkv0h2IIVRL7-NDgs9ZqWNJG_Ik02bVQ8Qml19tqqB8
 
 * アフィリエイトサービスへの登録 (affiliate)
 
