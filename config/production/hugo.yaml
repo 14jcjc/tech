@@ -36,7 +36,7 @@ services:
 permalinks:
   page:
     page: /:slug/
-    hidden: /:slug/
+    hidden-14katsu: /:slug/
     # ds-drills: /ds-practice-drills/:sections[1:]/:slug/
     ds-drills: /ds-drills/:slug/
     dev: /dev/:slug/
