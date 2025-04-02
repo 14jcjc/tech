@@ -123,7 +123,7 @@ languages:
           url: /privacy/
           weight: 60
           params: 
-            icon: info-square-rounded
+            icon: square-rounded-letter-p
         
         # - name: Links
         #   url: /links
