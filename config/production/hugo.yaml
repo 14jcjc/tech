@@ -13,7 +13,7 @@ buildDrafts: false
 # enableRobotsTXT: true # robots.txt の生成を有効にする
 enableRobotsTXT: false
 
-# disableKinds: true # sitemap.xml の生成を有効にする
+# sitemap.xml の生成を無効にする
 # disableKinds: 
 #   - sitemap
 
@@ -36,6 +36,7 @@ services:
 permalinks:
   page:
     page: /:slug/
+    hidden: /:slug/
     # ds-drills: /ds-practice-drills/:sections[1:]/:slug/
     ds-drills: /ds-drills/:slug/
     dev: /dev/:slug/
