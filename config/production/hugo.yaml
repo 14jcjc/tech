@@ -14,8 +14,8 @@ buildDrafts: false
 enableRobotsTXT: false
 
 # disableKinds: true # sitemap.xml の生成を有効にする
-disableKinds: 
-  - sitemap
+# disableKinds: 
+#   - sitemap
 
 services:
   googleAnalytics:
@@ -189,8 +189,9 @@ module:
   mounts:
   - excludeFiles: 
       - post
-      # - test
-      # - ds-drills/test
+      - test
+      - ds-drills/test
+      - categories-bak
       # - categories
       # - test/books/**
     source: content

@@ -1,5 +1,5 @@
 User-agent: *
-Disallow: /
+# Disallow: /
 Disallow: /portfolio/
 Disallow: /test/
 Sitemap: https://katsu-ds-lab.com/sitemap.xml
