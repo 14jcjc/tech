@@ -1,6 +1,6 @@
 ---
 {{ $id := lower .File.ContentBaseName -}}
-title: "{{ .Site.Params.k100.site.rsql }}{{ .Site.Params.k100.site.titleF }} - {{ upper .File.ContentBaseName }}"
+title: "{{ .Site.Params.k100.site.rsql }}{{ .Site.Params.k100.site.titleF }} - {{ upper .File.ContentBaseName }} (解説)"
 date: "{{ .Date }}"
 lastmod:
 slug: "{{ $id }}"
