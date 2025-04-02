@@ -124,7 +124,7 @@ disableKinds:
 ```r {name="R"}
 ```sql {name="SQL"}
 
-- 目次の改訂
+- 目次のレベルの変更
 - コードブロックの追加
 
 - free.md を改訂する

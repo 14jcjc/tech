@@ -2,6 +2,7 @@
 {{ $id := lower .File.ContentBaseName -}}
 title: "{{ .Site.Params.k100.site.rsql }}{{ .Site.Params.k100.site.titleF }} - {{ upper .File.ContentBaseName }}"
 date: "{{ .Date }}"
+lastmod:
 slug: "{{ $id }}"
 # draft: true
 description: ""

@@ -14,4 +14,6 @@ date: '2025-02-25T21:15:14+09:00'
 
 ---
 
+{{% comment %}}
 - {{< product-link id="ds100kdp" platform="amazon" >}}
+{{% /comment %}}
