@@ -100,8 +100,7 @@ Stackテーマはブログ向けなので、「記事」として整理すると
 disableKinds: 
   - sitemap
 
-  <loc>https://katsu-ds-lab.com/page/</loc>
-
+  <loc>https://katsu-ds-lab.com/hidden/</loc>
 
 - データサイエンス100本ノック＋α
   データフレーム操作とSQLクエリについて、Notebook で動作確認する
