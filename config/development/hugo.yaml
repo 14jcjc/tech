@@ -131,6 +131,13 @@ languages:
           params: 
             icon: search
         
+        - identifier: "Privacy Policy"
+          name: "Privacy Policy"
+          url: /privacy/
+          weight: 60
+          params: 
+            icon: info-square-rounded
+
         # - name: Links
         #   url: /links
         #   weight: 60
