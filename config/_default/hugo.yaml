@@ -78,6 +78,11 @@ capitalizeListTitles: false
 titleCaseStyle: ap # ap, chicago, go, firstupper, or none.
 # summaryLength: 50
 
+frontmatter:
+  lastmod:
+  - lastmod
+  - :fileModTime
+
 # 各ページの .GitInfo オブジェクトを有効にします (Hugo サイトが Gitでバージョン管理されている場合）.
 # これにより、各ページの Lastmod パラメータが, そのコンテンツファイルの最後の git コミット日時で更新されます.
 # デフォルトは false です。

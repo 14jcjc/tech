@@ -2,6 +2,7 @@
 title: "Test - サイト作成Tips"
 draft: true
 date: 2024-12-29T01:20:27+09:00
+# lastmod: 2024-12-30T07:14:28+09:00
 weight: 11
 slug: "site-tips-test"
 # summary: 'これはsummaryです。'
