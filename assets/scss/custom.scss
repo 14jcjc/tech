@@ -1590,15 +1590,15 @@ blockquote.alert {
 /* ラジオボタンとラベルを一緒に配置 */
 .list-toggle label {
   display: flex;
-  // display: inline-flex;
+  // width: 100%;
+  // width: fit-content;
+  width: auto;
   align-items: center;
   gap: 5px; /* ラジオボタンとテキストの間隔 */
   /* padding: 5px 10px; */
   cursor: pointer !important;
   font-size: calc(var(--base-font-size) * 0.9);
   line-height: 1;
-  // width: fit-content;
-  width: auto;
   // padding: 4px 8px; /* クリックしやすくする */
   position: relative; /* input を内部に隠すため */
 }

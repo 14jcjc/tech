@@ -1,5 +1,6 @@
 以下の設定で、有効なラジオボタンとラベルの cursor: pointer; の範囲が狭すぎる。
-具体的には、ボタンとラベルのアンダーライン辺りでしか pointer にならない。
+具体的には、ボタンとラベルのボーダー(輪郭)でしか pointer にならない。
+label の中に ラジオボタンがあるから仕方ない？
 
 <div class="list-toggle">
   <div class="row-title">
