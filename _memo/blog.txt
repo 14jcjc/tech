@@ -105,6 +105,12 @@ disableKinds:
   - sitemap
 
 - categories の各index.md を作成する
+- categories の各画像 を作成する
+
+- google で「R SQL 演習問題」だと2位にランクインするが、
+  「R SQL 練習問題」だとランク外になる。
+
+  時間の経過により「R SQL 練習問題」でもランクインする可能性はある？
 
 - データサイエンス100本ノック＋α
   データフレーム操作とSQLクエリについて、Notebook で動作確認する
