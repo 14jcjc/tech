@@ -1,12 +1,219 @@
-## 利用するサービスについて
+以下の設定で、有効なラジオボタンとラベルの cursor: pointer; の範囲が狭すぎる。
+具体的には、ボタンとラベルのアンダーライン辺りでしか pointer にならない。
 
-当サイトでは、以下のサービスを利用しています。これらのサービスは、サイトの運営やユーザーの利便性向上を目的としています。
+<div class="list-toggle">
+  <div class="row-title">
+    <!-- <label> -->
+  	<label class="disabled-label">
+      <input type="radio" name="edition-toggle" value="all" disabled>
+      <span>全て</span>
+    </label>
+    <label>
+      <input type="radio" name="edition-toggle" value="standard" checked>
+      <span>{{< param k100.site.titleF >}}</span>
+    </label>
+    <!-- <label> -->
+    <label class="disabled-label">
+      <input type="radio" name="edition-toggle" value="advanced" disabled>
+      <span>オリジナル問題集</span>
+    </label>
+    {{% comment %}}
+      <span>{{< param k100.site.titleP >}}</span>
+    {{% /comment %}}
+  </div>
 
-- **Google アナリティクス**  
-  当サイトでは、Google アナリティクスを使用して、サイトの利用状況を解析しています。Google アナリティクスはCookieを使用して匿名でデータを収集し、個人を特定するものではありません。収集されたデータは、Googleのプライバシーポリシーに基づいて管理されます。
+  <div class="row-sort">
+    <label for="order-1">
+      <input type="radio" id="order-1" name="order-toggle" value="id" checked>
+      <span>番号順</span>
+    </label>
+    <label for="order-2">
+      <input type="radio" id="order-2" name="order-toggle" value="difficulty-desc">
+      <span>難易度降順</span>
+    </label>
+    <label for="order-3">
+      <input type="radio" id="order-3" name="order-toggle" value="difficulty-asc">
+      <span>難易度昇順</span>
+    </label>
+  </div>
+</div>
 
-  - [Google アナリティクス利用規約](https://marketingplatform.google.com/about/analytics/terms/jp/)
-  - [Google ポリシーと規約](https://policies.google.com/privacy?hl=ja)
+// ラジオボタンのレイアウト ([R & SQL] 演習問題一覧)
+.list-toggle {
+  display: flex;
+  flex-direction: column; /* 縦並びにする */
+  align-items: flex-start; /* 左寄せ */
+  margin-bottom: 20px;
+  gap: 18px; /* ラベル間の間隔 */
+  padding: 16px;
+  border: 1px solid #ccc; /* 全体を囲む枠線 */
+  border-radius: 8px; /* 角を丸める */
+  // background-color: #fafafc;
+  background-color: #fcfcfc;
+  max-width: 100%;
+}
+[data-scheme="dark"] {
+  .list-toggle {
+    // background-color: #1f1f25;
+    // background-color: #242424;
+    // background-color: rgb(55, 56, 62);
+    // background-color: rgb(55, 56, 57);
+    // background-color: rgb(50, 50, 50);
+    background-color: rgb(55, 54, 50);
+  }
+}
 
-- **アフィリエイトプログラム**  
-  当サイトは、Amazon アソシエイト、楽天アフィリエイト、Yahoo!ショッピングアフィリエイト（バリューコマース等）に参加しており、リンクを経由して購入された場合、一定の報酬を受け取ることがあります。
+/* ラジオボタンの行のデフォルト設定 */
+.list-toggle .row-title,
+.list-toggle .row-sort {
+  display: flex;
+  flex-wrap: wrap; /* 画面が狭いとき折り返す */
+  gap: 12px;
+}
+[data-scheme="dark"] {
+  .list-toggle .row-title,
+  .list-toggle .row-sort {
+    color: rgb(250, 250, 250);
+  }
+}
+
+/* ラジオボタンの行を横並びに設定 */
+.list-toggle .row-title {
+  // display: flex;
+  flex-direction: column; /* ラジオボタンを縦並び */
+  // justify-content: flex-start;
+  // gap: 12px; /* ラジオボタン間の間隔 */
+  padding-bottom: 18px; /* 罫線と間隔を確保 */
+  border-bottom: 1px solid #ccc; /* 灰色の区切り線 */
+}
+
+.list-toggle .row-sort {
+  // display: flex;
+  // flex-direction: row; /* ラジオボタンを横並び */
+  // justify-content: flex-start;
+  // gap: 12px; /* ラジオボタン間の間隔 */
+  padding-top: 0px; /* 罫線との間隔 */
+}
+
+/* 画面幅が狭いときは縦並びに変更 */
+@media (max-width: 600px) {
+  // .list-toggle .row-title,
+  .list-toggle .row-sort {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* チェックされたラジオボタンのラベルの色を変更 */
+.list-toggle input[type="radio"]:checked + span {
+  /* background-color: #007bff; */
+  color: #1976d2; 
+}
+[data-scheme="dark"] {
+  .list-toggle input[type="radio"]:checked + span {
+    color: #50D0FF;
+  }
+}
+
+/* ラジオボタンとラベルを一緒に配置 */
+.list-toggle label {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* ラジオボタンとテキストの間隔 */
+  /* padding: 5px 10px; */
+  cursor: pointer !important;
+  font-size: calc(var(--base-font-size) * 0.9);
+  line-height: 1;
+  width: fit-content;
+}
+
+/* カスタムラジオボタン */
+.list-toggle input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  aspect-ratio: 1 / 1;
+  width: 16px;
+  height: 16px;
+  // box-sizing: content-box; /* width, height に padding や border を含めない */
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+  /* display: inline-block; */
+  /* vertical-align: middle; */
+  margin: 0; /* ラジオボタンのデフォルト余白を削除 */
+  padding: 0; /* 余白をなくす */
+  // opacity: 0;
+  // position: absolute;
+  /* ズレを補正 */
+  position: relative;
+  vertical-align: middle; /* テキストとのズレを防ぐ */
+  outline: none; /* フォーカス枠を消す */
+  /* これで微調整 */
+  top: 0px; 
+}
+[data-scheme="dark"] {
+  .list-toggle input[type="radio"] {
+    border-color: #BBBBBB;
+  }
+}
+
+/* チェックマーク */
+.list-toggle input[type="radio"]::before {
+  content: "";
+  display: none;
+  // display: none !important;
+  position: absolute;
+  top: 50%; /* 親要素の中央に配置 */
+  left: 50%; /* 親要素の中央に配置 */
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  background-color: #2196f3;
+  border-radius: 50%;
+}
+
+/* 選択時にチェックマークを表示 */
+.list-toggle input[type="radio"]:checked::before {
+  display: block;
+}
+
+/* ラジオボタンにホバーしたときのエフェクト */
+.list-toggle input[type="radio"]:hover {
+  border-color: #42a5f5; /* ホバー時のボーダー色（青） */
+  background-color: #e3f2fd; /* ホバー時の背景色（淡い青） */
+}
+
+/* 選択中のラジオボタン */
+.list-toggle input[type="radio"]:checked {
+  /* 選択時の背景色 */
+  /* background-color: #2196f3; */
+  background-color: white;
+  /* 選択時のボーダー色 */
+  border-color: #1976d2; 
+}
+[data-scheme="dark"] {
+  .list-toggle input[type="radio"]:checked {
+    border-color: #42a5f5;
+  }
+}
+
+/* ラジオボタンがフォーカスされたとき */
+.list-toggle input[type="radio"]:focus {
+  /* デフォルトのアウトラインを消す */
+  outline: none;
+  /* フォーカス時の強調 */
+  box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.5); 
+}
+
+// 無効なラジオボタンの親ラベルをグレーアウト
+.list-toggle .disabled-label {
+  color: #aaa;
+}
+
+// 無効なラジオボタン自体も少しグレーに
+.list-toggle input[type="radio"]:disabled {
+  cursor: not-allowed;
+  accent-color: #ccc;
+}
