@@ -5,8 +5,8 @@ date: 2025-02-23T01:01:20+09:00
 draft: false
 # draft: true
 weight: 20
-description: "当サイトで紹介している R と SQL の演習問題"
-summary: "当サイトで紹介している R と SQL の演習問題一覧です"
+description: "当サイトで紹介している R と SQL の演習問題一覧です。"
+summary: "当サイトで紹介している R と SQL の演習問題一覧です。"
 categories: ["R & SQL 演習問題 - 基本情報"]
 tags: 
 toc: true # 目次

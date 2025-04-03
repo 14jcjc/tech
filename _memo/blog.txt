@@ -100,8 +100,6 @@ Stackテーマはブログ向けなので、「記事」として整理すると
 disableKinds: 
   - sitemap
 
-  <loc>https://katsu-ds-lab.com/hidden/</loc>
-
 - データサイエンス100本ノック＋α
   データフレーム操作とSQLクエリについて、Notebook で動作確認する
 
@@ -291,12 +289,13 @@ https://chatgpt.com/c/678ef794-3970-8005-8183-b5f17ca3a0ce
 
 * 公開時の設定
 
-- robots.txt: static/robots.txt を削除すること！
-- sitemap.xml: 編集する！
+- robots.txt: static/robots.txt を編集する
+- sitemap.xml: 自動作成に切り替える
 
 * Google Analytics
 
 - IPアドレスを確認する (内部トラフィックの設定)
+- 内部トラフィックの除外を確認する
 - データ保持期間を14ヶ月にする
 - Googleサーチコンソールと連携する
 
