@@ -1,5 +1,5 @@
 ---
-title: "[R & SQL] 演習問題集"
+title: "[R & SQL] 演習問題集 (データ加工)"
 # url: "data-tf"
 date: 2025-01-05T02:10:20+09:00
 draft: false
