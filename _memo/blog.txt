@@ -112,6 +112,11 @@ disableKinds:
 
 - Google キーワードプランナー (検索ボリューム)
 
+- フッターから以下を削除する: 
+  当サイトは、Amazonのアソシエイトとして適格販売により一定の報酬を得ています。
+
+- Privacy Policy をメニューから外す (?)
+
 - categories の各index.md を作成する
 - categories の各画像 を作成する
 
@@ -163,8 +168,6 @@ q = sql()
 q %>% db_get_query(con)
 
 - 「カテゴリー」→ 「カテゴリ」に修正する
-
-- Privacy Policy をメニューから外す (?)
 
 - サイト名、サブタイトルの変更 (日本語・英語)
 

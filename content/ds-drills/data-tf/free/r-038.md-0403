@@ -108,21 +108,18 @@ df_receipt %>% select(customer_id, amount)
 ### 解答例と実行結果
 
 ```r {name="R"}
-df_customer_sales = df_receipt %>% 
-  summarise(
-    sum_amount = sum(amount, na.rm = TRUE), 
-    .by = "customer_id"
-  )
-
 df_customer %>% 
   filter(
     gender_cd == "1" & !str_detect(customer_id, "^Z")
   ) %>% 
-  select(customer_id) %>% 
   left_join(
-    df_customer_sales, by = "customer_id"
+    df_receipt %>% select(customer_id, amount), 
+    by = "customer_id"
   ) %>% 
-  tidyr::replace_na(list(sum_amount = 0.0)) %>% 
+  summarise(
+    sum_amount = sum(amount, na.rm = TRUE), 
+    .by = "customer_id"
+  ) %>% 
   arrange(customer_id) %>% 
   head(10)
 ```
@@ -145,64 +142,19 @@ df_customer %>%
 
 ### 解説
 
-#### 顧客ごとの売上金額合計を算出
-
-```r {name="R"}
-df_customer_sales = df_receipt %>% 
-  summarise(
-    sum_amount = sum(amount, na.rm = TRUE), 
-    .by = "customer_id"
-  )
-```
-
-- `df_receipt` から、顧客 (`customer_id`) ごとの売上金額の合計 (`sum_amount`) を計算します。
-- `sum(amount, na.rm = TRUE)` により、`NA` を除外して合計します。
-
-`df_customer_sales` は次のようなデータフレームになります。
-
-```text
-# A tibble: 8,307 × 2
-  customer_id    sum_amount
-  <chr>               <dbl>
-1 CS006214000001       7364
-2 CS008415000097       1895
-3 CS028414000014       6222
-4 ZZ000000000000   12395003
-5 CS025415000050       5736
-...
-```
-
-#### 特定の顧客を抽出し、売上データと結合
-
-```r
-df_customer %>% 
-  filter(
-    gender_cd == "1" & !str_detect(customer_id, "^Z")
-  ) %>% 
-  select(customer_id) %>% 
-  left_join(
-    df_customer_sales, by = "customer_id"
-  ) %>% 
-  tidyr::replace_na(list(sum_amount = 0.0)) %>% 
-  arrange(customer_id) %>% 
-  head(10)
-```
-
 1. **`filter()`**
    - `gender_cd` が `"1"` の顧客 (女性) を抽出します。
    - `customer_id` の先頭が `"Z"` で始まるものを除外します。
 
-2. **`select(customer_id)`**
-   - `customer_id` 列のみを抽出します。
+2. **`left_join()`**
+   - `customer_id` をキーとして `df_receipt` を `left_join` し、`amount` 列を追加します。
+   - 購入履歴がない場合、`amount` は `NA` になります。
 
-3. **`left_join()`**
-   - `customer_id` をキーとして `df_customer_sales` を左外部結合(`left_join`) し、`sum_amount` 列を追加します。
-   - 購入履歴がない場合、`sum_amount` は欠損値 `NA` になります。
+3. **`summarise()`**
+   - `customer_id` ごとに `amount` を合計します。
+   - `na.rm = TRUE` の指定で `NA` を無視して合計値を計算します。
 
-4. **`replace_na(list(sum_amount = 0.0))`**  
-   `sum_amount` が欠損値の箇所を `0.0` に置き換えます。
-
-5. **`arrange(customer_id) %>% head(10)`**
+4. **`arrange(customer_id) %>% head(10)`**
    - `customer_id` の昇順に並べ替えます。
    - 先頭 10 件を取得します。
 
@@ -216,21 +168,19 @@ df_customer %>%
 以下は、`filter(!str_detect(...))` の代わりに `%LIKE%` を用いた構文で簡略化した解答例です。
 
 ```r {name="R"}
-db_customer_sales = db_receipt %>% 
+db_result = db_customer %>% 
+  filter(
+    gender_cd == "1" & !(customer_id %LIKE% "%Z")
+  ) %>% 
+  left_join(
+    db_receipt %>% select(customer_id, amount), 
+    by = "customer_id"
+  ) %>% 
   summarise(
     sum_amount = sum(amount, na.rm = TRUE), 
     .by = "customer_id"
-  )
-
-db_result = db_customer %>% 
-  filter(
-    gender_cd == "1" & !(customer_id %LIKE% "Z%")
   ) %>% 
-  select(customer_id) %>% 
-  left_join(
-    db_customer_sales, by = "customer_id"
-  ) %>% 
-  tidyr::replace_na(list(sum_amount = 0.0)) %>% 
+  replace_na(list(sum_amount = 0.0)) %>% 
   arrange(customer_id) %>% 
   head(10)
 
@@ -255,12 +205,12 @@ db_result %>% collect()
 
 ### 解説
 
-データフレーム操作との相違点は以下の箇所です。
-
 - `customer_id` のパターンマッチングの処理は、**`%LIKE%`** を用いて簡略化しています。  
   (`str_detect()` を用いても OK です。)  
   `%LIKE%` は dbplyr が認識できないインフィックス関数なので、慣例に従い大文字で記述します。  
   (詳しくは {{% ref2 path="/dev/data-engineering/r-sql-translation#dbplyr-unknown" text="dbplyr が認識できない式 " %}} を参照してください。)
+- **`replace_na(list(sum_amount = 0.0))`**  
+  `db_receipt` に存在しない `customer_id` については `sum_amount` が 0 ではなく欠損となるため、欠損値を `0.0` に置き換えます。
 - **`db_result %>% collect()`**  
   データベース操作の結果を R のデータフレーム (tibble) として取得します。
 
@@ -321,20 +271,20 @@ db_result %>% show_query(cte = TRUE)
 
 ```sql {name="SQL"}
 WITH q01 AS (
-  SELECT customer_id
+  SELECT customer.*
   FROM customer
-  WHERE (gender_cd = '1' AND NOT((customer_id LIKE 'Z%')))
+  WHERE (gender_cd = '1' AND NOT((customer_id LIKE '%Z')))
 ),
 q02 AS (
-  SELECT customer_id, SUM(amount) AS sum_amount
-  FROM receipt
-  GROUP BY customer_id
+  SELECT LHS.*, amount
+  FROM q01 LHS
+  LEFT JOIN receipt
+    ON (LHS.customer_id = receipt.customer_id)
 ),
 q03 AS (
-  SELECT LHS.customer_id AS customer_id, sum_amount
-  FROM q01 LHS
-  LEFT JOIN q02 RHS
-    ON (LHS.customer_id = RHS.customer_id)
+  SELECT customer_id, SUM(amount) AS sum_amount
+  FROM q02 q01
+  GROUP BY customer_id
 )
 SELECT customer_id, COALESCE(sum_amount, 0.0) AS sum_amount
 FROM q03 q01
@@ -347,117 +297,31 @@ LIMIT 10
 このクエリをより簡潔な形に書き直すと、次のようになります。
 
 ```sql {name="SQL"}
-WITH filtered_customers AS (
-  SELECT 
-    customer_id
-  FROM 
-    customer
-  WHERE 
-    gender_cd = '1' 
-    AND customer_id NOT LIKE 'Z%'
-),
-customer_sales AS (
-  SELECT 
-    customer_id, 
-    SUM(amount) AS sum_amount
-  FROM 
-    receipt
-  GROUP BY 
-    customer_id
-)
 SELECT 
-  fc.customer_id, 
-  COALESCE(cs.sum_amount, 0.0) AS sum_amount
+  c.customer_id, 
+  COALESCE(SUM(r.amount), 0.0) AS sum_amount
 FROM 
-  filtered_customers fc
+  customer c 
 LEFT JOIN 
-  customer_sales cs 
+  receipt r 
 USING (customer_id)
+WHERE 
+  c.gender_cd = '1' 
+  AND customer_id NOT LIKE 'Z%' 
+GROUP BY 
+  c.customer_id 
 ORDER BY 
-  fc.customer_id
+  c.customer_id 
 LIMIT 10
 ```
 
 ### 解説
 
-#### `filtered_customers` の作成
+`customer_id` ごとに `amount` の合計を計算し、欠損値を `0.0` に置き換えます。
 
-```sql {name="SQL"}
-WITH filtered_customers AS (
-  SELECT 
-    customer_id
-  FROM 
-    customer
-  WHERE 
-    gender_cd = '1' 
-    AND customer_id NOT LIKE 'Z%'
-)
-```
-
-- `customer` テーブルから、`gender_cd` が `'1'` の顧客 (女性) を抽出します。
-- `customer_id NOT LIKE 'Z%'` により、`customer_id` の先頭が `'Z'` の顧客を除外します。
-- 条件に合致する `customer_id` のみを抽出し、一時テーブル `filtered_customers` を作成します。
-
-これにより、`filtered_customers` は次のような結果を返します。
-
-```text
-  customer_id
-  <chr>
-1 CS021313000114
-2 CS031415000172
-3 CS028811000001
-4 CS001215000145
-5 CS015414000103
-...
-```
-
-#### `customer_sales` の作成
-
-```sql {name="SQL"}
-customer_sales AS (
-  SELECT 
-    customer_id, 
-    SUM(amount) AS sum_amount
-  FROM 
-    receipt
-  GROUP BY 
-    customer_id
-)
-```
-
-- `receipt` テーブルを `customer_id` ごとに集計し、`sum_amount` (売上金額合計) を計算します。
-- `SUM(amount)` と `GROUP BY customer_id` の組み合わせにより、各 `customer_id` の売上金額の合計を求めています。
-
-これにより、`customer_sales` は次のような結果を返します。
-
-```text
-  customer_id    sum_amount
-  <chr>               <dbl>
-1 CS003515000195       5412
-2 CS014415000077      14076
-3 CS026615000085       2885
-4 CS015415000120       4106
-5 CS008314000069       5293
-...
-```
-
-#### メインクエリ
-
-```sql {name="SQL"}
-SELECT 
-  fc.customer_id, 
-  COALESCE(cs.sum_amount, 0.0) AS sum_amount
-FROM 
-  filtered_customers fc
-LEFT JOIN 
-  customer_sales cs 
-USING (customer_id)
-ORDER BY 
-  fc.customer_id
-LIMIT 10
-```
-
-- **`LEFT JOIN`** により、`customer_id` をキーとして `filtered_customers` と `customer_sales` を左外部結合します。
+- **`LEFT JOIN`** を使用し、`customer_id` をキーとして `customer` テーブルと `receipt` テーブルを結合します。
+- **`WHERE`** 句で `gender_cd = '1'` (女性) かつ `customer_id` が `'Z'` で始まらない顧客を対象にします。
+- **`GROUP BY`** で `customer_id` ごとにグループ化し、`SUM()` を適用します。
 - **`COALESCE()`** を用いて、`NULL` を `0.0` に置き換えます。
 - **`ORDER BY`** で `customer_id` の昇順に並べ、**`LIMIT 10`** で 10 件取得します。
 
@@ -467,34 +331,21 @@ LIMIT 10
 
 ```r {name="R"}
 query = sql("
-WITH filtered_customers AS (
-  SELECT 
-    customer_id
-  FROM 
-    customer
-  WHERE 
-    gender_cd = '1' 
-    AND customer_id NOT LIKE 'Z%'
-),
-customer_sales AS (
-  SELECT 
-    customer_id, 
-    SUM(amount) AS sum_amount
-  FROM 
-    receipt
-  GROUP BY 
-    customer_id
-)
 SELECT 
-  fc.customer_id, 
-  COALESCE(cs.sum_amount, 0.0) AS sum_amount
+  c.customer_id, 
+  COALESCE(SUM(r.amount), 0.0) AS sum_amount
 FROM 
-  filtered_customers fc
+  customer c 
 LEFT JOIN 
-  customer_sales cs 
+  receipt r 
 USING (customer_id)
+WHERE 
+  c.gender_cd = '1' 
+  AND customer_id NOT LIKE 'Z%' 
+GROUP BY 
+  c.customer_id 
 ORDER BY 
-  fc.customer_id
+  c.customer_id 
 LIMIT 10
 "
 )

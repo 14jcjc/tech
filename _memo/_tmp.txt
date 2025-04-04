@@ -1,9 +1,61 @@
-Hugo + GitHub Pages　で以下を設定すると、
-記事の最終更新が、開発環境では fileModTime になるが、
-本番環境ではより新しい日（おそらく deploy した日時）になってしまう。
+#### `filtered_customers` の作成
 
-frontmatter:
-  lastmod:
-  - lastmod
-  - :fileModTime
+```sql {name="SQL"}
+WITH filtered_customers AS (
+  SELECT 
+    customer_id
+  FROM 
+    customer
+  WHERE 
+    gender_cd = '1' 
+    AND customer_id NOT LIKE '%Z'
+),
+```
 
+- `customer` テーブルから、`gender_cd` が `'1'` の顧客（男性）を抽出しています。  
+- `customer_id NOT LIKE '%Z'` によって、`customer_id` の末尾が `'Z'` の顧客を除外しています。  
+- 条件に合致する `customer_id` のみを抽出し、一時テーブル `filtered_customers` を作成しています。  
+
+---
+
+#### `customer_sales` の作成
+
+```sql {name="SQL"}
+customer_sales AS (
+  SELECT 
+    customer_id, 
+    SUM(amount) AS sum_amount
+  FROM 
+    receipt
+  GROUP BY 
+    customer_id
+)
+```
+
+- `receipt` テーブルを `customer_id` ごとに集計し、`sum_amount`（売上金額合計）を計算します。  
+- `SUM(amount)` と `GROUP BY customer_id` の組み合わせにより、各顧客の購入金額の合計を算出しています。  
+- この処理で作成された一時テーブル `customer_sales` には、`customer_id` ごとの合計金額が格納されます。  
+
+---
+
+#### 顧客ごとの売上金額を結合して取得
+
+```sql {name="SQL"}
+SELECT 
+  fc.customer_id, 
+  COALESCE(cs.sum_amount, 0.0) AS sum_amount
+FROM 
+  filtered_customers fc
+LEFT JOIN 
+  customer_sales cs 
+USING (customer_id)
+ORDER BY 
+  fc.customer_id
+LIMIT 10
+```
+
+- `filtered_customers` を基準に `customer_sales` を `LEFT JOIN` しています。  
+- 売上が存在しない顧客についても全件表示するため、`LEFT JOIN` を使用しています。  
+- `COALESCE(cs.sum_amount, 0.0)` によって、売上が存在しない場合は `NULL` の代わりに `0.0` を表示します。  
+- `ORDER BY fc.customer_id` により、`customer_id` 順で並び替えを行います。  
+- `LIMIT 10` によって、先頭の 10 件のみを抽出しています。  
