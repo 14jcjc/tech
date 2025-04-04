@@ -1596,7 +1596,8 @@ blockquote.alert {
   align-items: center;
   gap: 5px; /* ラジオボタンとテキストの間隔 */
   /* padding: 5px 10px; */
-  cursor: pointer !important;
+  // cursor: pointer !important;
+  cursor: pointer;
   font-size: calc(var(--base-font-size) * 0.9);
   line-height: 1;
   // padding: 4px 8px; /* クリックしやすくする */
@@ -1685,6 +1686,7 @@ blockquote.alert {
 
 // 無効なラジオボタンの親ラベルをグレーアウト
 .list-toggle .disabled-label {
+  cursor: not-allowed;
   color: #aaa;
 }
 
