@@ -104,6 +104,14 @@ Stackテーマはブログ向けなので、「記事」として整理すると
 disableKinds: 
   - sitemap
 
+- R-038 解説 を改訂する: summarise() を先に行う
+
+- R-043 解説 を改訂する
+
+- R-044 解説 を改訂する
+
+- Google キーワードプランナー (検索ボリューム)
+
 - categories の各index.md を作成する
 - categories の各画像 を作成する
 
