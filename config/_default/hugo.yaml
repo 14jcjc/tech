@@ -134,8 +134,8 @@ params:
 
     # favicon: "favicon.png"
     # favicon: "favicon.ico"
-    # favicon: "favicon-32x32.png"
-    favicon: "favicon-16x16.png"
+    # favicon: "favicon-16x16.png"
+    favicon: "favicon-32x32.png"
     
     # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
 
