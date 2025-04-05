@@ -131,13 +131,17 @@ params:
     featuredImageField: image
 
     rssFullContent: true # Output page's full content in RSS.
-    
-    # favicon: "favicon.ico"
-    favicon: "images/favicon/favicon-32x32.png"
 
-    # favicon: "images/favicon/favicon.ico"
-    # favicon16x16: "images/favicon/favicon-16x16.png"
-    # favicon32x32: "images/favicon/favicon-32x32.png"
+    # favicon: "favicon.ico"
+    # favicon: "images/favicon/favicon-32x32.png"
+
+    assets:
+      favicon: "images/favicon/favicon.ico"
+      favicon16x16: "images/favicon/favicon-16x16.png"
+      favicon32x32: "images/favicon/favicon-32x32.png"
+      apple_touch_icon: "images/favicon/apple-touch-icon.png"
+      android_chrome_192x192: "images/favicon/android-chrome-192x192.png"
+      android_chrome_512x512: "images/favicon/android-chrome-512x512.png"
     
     # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
 
