@@ -106,7 +106,9 @@ disableKinds:
 
 - サイト名の区切り文字を | にする
 
-- Google の検索結果に出るファビコン
+- favicon の設定方法を PaperMod と同じにする
+
+- Google の検索結果に出るファビコンを確認する！
 
 - R-038 解説 を改訂する: summarise() を先に行う
 
