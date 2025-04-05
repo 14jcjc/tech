@@ -104,6 +104,8 @@ Stackテーマはブログ向けなので、「記事」として整理すると
 disableKinds: 
   - sitemap
 
+- Google の検索結果に出るファビコン
+
 - R-038 解説 を改訂する: summarise() を先に行う
 
 - R-043 解説 を改訂する
@@ -120,7 +122,7 @@ disableKinds:
 - categories の各index.md を作成する
 - categories の各画像 を作成する
 
-- google で「R SQL 演習問題」だと2位にランクインするが、
+- google で「R SQL 演習問題」だと1位にランクインするが、
   「R SQL 練習問題」だとランク外になる。
 
   時間の経過により「R SQL 練習問題」でもランクインする可能性はある？
