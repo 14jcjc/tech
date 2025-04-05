@@ -11,11 +11,11 @@ rg -i "関連するコンテンツ" ./layouts -uu
 rg -i "share_icons" ./layouts -uu
 rg -i "article-title" ./layouts -uu
 
-rg -i "PhotoSwipe" ./themes/hugo-theme-stack/ -uu
 rg -i "menu" ./themes/hugo-theme-stack/assets/scss -uu
+rg -i "favicon" ./themes/hugo-theme-stack/ -uu
 
-rg -i "share-buttons" ../tech-blog-2/themes/PaperMod/assets/css -uu
 rg -i "toc \{" ../tech-blog-2/themes/PaperMod/assets/css -uu
+rg -i "favicon" ../save/tech-blog-PaperMod/themes/PaperMod/ -uu
 
 #-------------------------------------------------------------------------------
 * tbl() が返すオブジェクト
@@ -103,6 +103,8 @@ Stackテーマはブログ向けなので、「記事」として整理すると
 - sitemap.xml の生成を無効にする
 disableKinds: 
   - sitemap
+
+- サイト名の区切り文字を | にする
 
 - Google の検索結果に出るファビコン
 
