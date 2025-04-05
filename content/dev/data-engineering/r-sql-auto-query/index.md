@@ -6,7 +6,7 @@ date: 2025-01-12T00:03:13+09:00
 draft: false
 # draft: true
 weight: 35
-description: "R からデータベースに接続し、データ加工から SQLクエリ自動生成までの流れについて解説"
+description: "R からデータベースに接続し、データ加工から SQLクエリ自動生成までの流れについて解説します。"
 # summary: ""
 categories: ["R & SQL 演習問題 - 基本情報"]
 tags: ["SQL自動生成"]
