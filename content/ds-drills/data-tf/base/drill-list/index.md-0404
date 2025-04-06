@@ -163,17 +163,8 @@ ShowToc: false
     };
 
     // ページ読み込み時の処理
-    // let savedOrder = localStorage.getItem('order');
-    // let savedEdition = localStorage.getItem('edition');
-    // // ラジオボタンに適用（なければ 'standard' に強制）
-    // const orderRadio = document.querySelector(`input[name="order-toggle"][value="${savedOrder || 'id'}"]`);
-    // const editionRadio = document.querySelector(`input[name="edition-toggle"][value="${savedEdition || 'standard'}"]`);
-    // if (orderRadio) orderRadio.checked = true;
-    // if (editionRadio) editionRadio.checked = true;
-
-    // ページ読み込み時の処理
     let savedOrder = localStorage.getItem('order') || "id";
-    let savedEdition = localStorage.getItem('edition') || "standard";
+    let savedEdition = localStorage.getItem('edition') || "all";
 
     // ラジオボタンに適用
     const orderRadio = document.querySelector(`input[name="order-toggle"][value="${savedOrder}"]`);

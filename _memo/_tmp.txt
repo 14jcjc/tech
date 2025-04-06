@@ -1,61 +1,158 @@
-#### `filtered_customers` の作成
+<div class="list-toggle">
+  <div class="row-title">
+    <!-- <label> -->
+  	<label class="disabled-label">
+      <input type="radio" name="edition-toggle" value="all" disabled>
+      <span>全て</span>
+    </label>
+    <label>
+      <input type="radio" name="edition-toggle" value="standard" checked>
+      <span>{{< param k100.site.titleF >}}</span>
+    </label>
+    <!-- <label> -->
+    <label class="disabled-label">
+      <input type="radio" name="edition-toggle" value="advanced" disabled>
+      <span>オリジナル問題集</span>
+    </label>
+    {{% comment %}}
+      <span>{{< param k100.site.titleP >}}</span>
+    {{% /comment %}}
+  </div>
 
-```sql {name="SQL"}
-WITH filtered_customers AS (
-  SELECT 
-    customer_id
-  FROM 
-    customer
-  WHERE 
-    gender_cd = '1' 
-    AND customer_id NOT LIKE '%Z'
-),
-```
+  <div class="row-sort">
+    <label for="order-1">
+      <input type="radio" id="order-1" name="order-toggle" value="id" checked>
+      <span>番号順</span>
+    </label>
+    <label for="order-2">
+      <input type="radio" id="order-2" name="order-toggle" value="difficulty-desc">
+      <span>難易度降順</span>
+    </label>
+    <label for="order-3">
+      <input type="radio" id="order-3" name="order-toggle" value="difficulty-asc">
+      <span>難易度昇順</span>
+    </label>
+  </div>
+</div>
 
-- `customer` テーブルから、`gender_cd` が `'1'` の顧客（男性）を抽出しています。  
-- `customer_id NOT LIKE '%Z'` によって、`customer_id` の末尾が `'Z'` の顧客を除外しています。  
-- 条件に合致する `customer_id` のみを抽出し、一時テーブル `filtered_customers` を作成しています。  
+<!-- 全9パターンのリスト (最初はデフォルト以外を非表示にしておく) -->
+<div id="list-id-all" class="question-list" style="display:block;">
+  <div class="edition-title">全て (番号順)</div>
+<!-- 
+- [{{% param k100.site.titleP %}}]({{< ref "#a" >}})
+- [{{% param k100.site.titleF %}}]({{< ref "#s" >}})
+-->
 
----
+## {{% param k100.site.titleP %}}{#a}
+  
+  {{< k100/q-list ed="advanced" root=".." sortkey="id" order="asc" >}}
 
-#### `customer_sales` の作成
+## {{% param k100.site.titleF %}}{#s}
+  
+  {{< k100/q-list ed="standard" root=".." sortkey="id" order="asc" >}}
 
-```sql {name="SQL"}
-customer_sales AS (
-  SELECT 
-    customer_id, 
-    SUM(amount) AS sum_amount
-  FROM 
-    receipt
-  GROUP BY 
-    customer_id
-)
-```
+  {{% comment %}}
+  {{< k100/q-list ed="standard,advanced" root=".." sortkey="id" order="asc" >}}
+  {{% /comment %}}
+</div>
 
-- `receipt` テーブルを `customer_id` ごとに集計し、`sum_amount`（売上金額合計）を計算します。  
-- `SUM(amount)` と `GROUP BY customer_id` の組み合わせにより、各顧客の購入金額の合計を算出しています。  
-- この処理で作成された一時テーブル `customer_sales` には、`customer_id` ごとの合計金額が格納されます。  
+<div id="list-difficulty-desc-all" class="question-list" style="display:none;">
+  <div class="edition-title">全て (難易度降順)</div>
+  {{< k100/q-list ed="standard,advanced" root=".." sortkey="difficulty" order="desc" >}}
+</div>
 
----
+<div id="list-difficulty-asc-all" class="question-list" style="display:none;">
+  <div class="edition-title">全て (難易度昇順)</div>
+  {{< k100/q-list ed="standard,advanced" root=".." sortkey="difficulty" order="asc" >}}
+</div>
 
-#### 顧客ごとの売上金額を結合して取得
+<div id="list-id-standard" class="question-list" style="display:none;">
+  <div class="edition-title">{{< param k100.site.titleF >}} (番号順)</div>
+  {{< k100/q-list ed="standard" root=".." sortkey="id" order="asc" >}}
+</div>
 
-```sql {name="SQL"}
-SELECT 
-  fc.customer_id, 
-  COALESCE(cs.sum_amount, 0.0) AS sum_amount
-FROM 
-  filtered_customers fc
-LEFT JOIN 
-  customer_sales cs 
-USING (customer_id)
-ORDER BY 
-  fc.customer_id
-LIMIT 10
-```
+<div id="list-difficulty-desc-standard" class="question-list" style="display:none;">
+  <div class="edition-title">{{< param k100.site.titleF >}} (難易度降順)</div>
+  {{< k100/q-list ed="standard" root=".." sortkey="difficulty" order="desc" >}}
+</div>
 
-- `filtered_customers` を基準に `customer_sales` を `LEFT JOIN` しています。  
-- 売上が存在しない顧客についても全件表示するため、`LEFT JOIN` を使用しています。  
-- `COALESCE(cs.sum_amount, 0.0)` によって、売上が存在しない場合は `NULL` の代わりに `0.0` を表示します。  
-- `ORDER BY fc.customer_id` により、`customer_id` 順で並び替えを行います。  
-- `LIMIT 10` によって、先頭の 10 件のみを抽出しています。  
+<div id="list-difficulty-asc-standard" class="question-list" style="display:none;">
+  <div class="edition-title">{{< param k100.site.titleF >}} (難易度昇順)</div>
+  {{< k100/q-list ed="standard" root=".." sortkey="difficulty" order="asc" >}}
+</div>
+
+<div id="list-id-advanced" class="question-list" style="display:none;">
+  <div class="edition-title">{{< param k100.site.titleP >}} (番号順)</div>
+  {{< k100/q-list ed="advanced" root=".." sortkey="id" order="asc" >}}
+</div>
+
+<div id="list-difficulty-desc-advanced" class="question-list" style="display:none;">
+  <div class="edition-title">{{< param k100.site.titleP >}} (難易度降順)</div>
+  {{< k100/q-list ed="advanced" root=".." sortkey="difficulty" order="desc" >}}
+</div>
+
+<div id="list-difficulty-asc-advanced" class="question-list" style="display:none;">
+  <div class="edition-title">{{< param k100.site.titleP >}} (難易度昇順)</div>
+  {{< k100/q-list ed="advanced" root=".." sortkey="difficulty" order="asc" >}}
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const questionLists = document.querySelectorAll('.question-list');
+    const toc = document.querySelector('.widget.archives');
+    // const tocContent = document.querySelector('.tocContent');
+    // const toc = document.querySelector('.widget--toc');
+    // const tocTitle = document.querySelector('.widget-title.section-title'); // h2を取得
+
+    const updateList = () => {
+      const selectedOrder = document.querySelector('input[name="order-toggle"]:checked')?.value;
+      const selectedEdition = document.querySelector('input[name="edition-toggle"]:checked')?.value;
+
+      if (!selectedOrder || !selectedEdition) return; // チェックされていない場合は処理を中断
+
+      // すべてのリストを非表示に
+      questionLists.forEach(list => list.style.display = 'none');
+
+      // 選択されたリストを表示
+      const targetList = document.getElementById(`list-${selectedOrder}-${selectedEdition}`);
+      if (targetList) {
+        targetList.style.display = 'block';
+      }
+
+      // 目次の表示・非表示を制御
+      if (selectedOrder === "id" && selectedEdition === "all") {
+        toc.style.display = "block";
+        // tocContent.style.display = "block";
+      } else {
+        toc.style.display = "none";
+        // tocContent.style.display = "none";
+      }
+
+      // 選択状態を localStorage に保存
+      localStorage.setItem('order', selectedOrder);
+      localStorage.setItem('edition', selectedEdition);
+    };
+
+    // ページ読み込み時の処理
+    let savedOrder = localStorage.getItem('order') || "id";
+    let savedEdition = localStorage.getItem('edition') || "all";
+
+    // ラジオボタンに適用
+    const orderRadio = document.querySelector(`input[name="order-toggle"][value="${savedOrder}"]`);
+    const editionRadio = document.querySelector(`input[name="edition-toggle"][value="${savedEdition}"]`);
+
+    if (orderRadio) orderRadio.checked = true;
+    if (editionRadio) editionRadio.checked = true;
+
+    // イベントリスナーを設定
+    document.querySelectorAll('input[name="order-toggle"], input[name="edition-toggle"]').forEach(radio => {
+      radio.addEventListener('change', updateList);
+    });
+
+    // 初回のリスト表示
+    updateList();
+  });
+</script>
+
+上記設定で、なぜか、スマホだと最初のアクセスで「全て」にチェックが付く。
+
