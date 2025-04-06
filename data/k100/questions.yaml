@@ -113,15 +113,15 @@ standard:
       第2四分位以上第3四分位未満 ・・・ 3を付与  
       第3四分位以上 ・・・ 4を付与
 
+advanced: 
   - id: "R-056"
     difficulty: 1
-    title: "年齢を10歳刻みで分類"
+    title: "顧客の年齢を10歳刻みで分類"
     summary: |
       年齢を10歳刻みで年代に分類する問題です。
     text: |
       顧客データ（customer）の年齢（age）をもとに10歳刻みで年代を算出し、顧客ID（customer_id）、生年月日（birth_day）とともに10件表示せよ。ただし、60歳以上は全て60歳代とすること。年代を表すカテゴリ名は任意とする。
-
-advanced: 
+  
   - id: "A-901"
     difficulty: 4
     title: "最新の購入日を取得"
