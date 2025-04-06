@@ -1689,11 +1689,18 @@ blockquote.alert {
   cursor: not-allowed;
   color: #aaa;
 }
+[data-scheme="dark"] {
+  .list-toggle .disabled-label {
+    cursor: not-allowed;
+    color: #999;
+  }
+}
 
 // 無効なラジオボタン自体も少しグレーに
 .list-toggle input[type="radio"]:disabled {
   cursor: not-allowed;
-  accent-color: #ccc;
+  // accent-color: #ccc;
+  background-color: #EEE;
 }
 
 //-------------------------------------------------------------------------------
