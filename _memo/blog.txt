@@ -105,7 +105,7 @@ Stackテーマはブログ向けなので、「記事」として整理すると
 disableKinds: 
   - sitemap
 
-- インデックスから除外
+- インデックスから除外 (portfolio)
   robots: "noindex, nofollow"
   robots.txt の Disallow からは外す
 
@@ -222,6 +222,8 @@ q %>% db_get_query(con)
 - amount が nullable の場合の処理
   nullable（NULL 許容） ⇔ non-nullable（NULL 非許容）
   NULL を許容する ⇔ NULL を許容しない
+
+- Amazon審査開始直前に Privacy Policy を index.md-審査開始後 に変更する。
 
 - 画像の圧縮（WebP 形式を利用）
 
