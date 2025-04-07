@@ -12,7 +12,7 @@ rg -i "share_icons" ./layouts -uu
 rg -i "article-title" ./layouts -uu
 
 rg -i "menu" ./themes/hugo-theme-stack/assets/scss -uu
-rg -i "favicon" ./themes/hugo-theme-stack/ -uu
+rg -i "robots" ./themes/hugo-theme-stack/ -uu
 
 rg -i "toc \{" ../tech-blog-2/themes/PaperMod/assets/css -uu
 rg -i "favicon" ../save/tech-blog-PaperMod/themes/PaperMod/ -uu
@@ -93,6 +93,7 @@ Stackテーマはブログ向けなので、「記事」として整理すると
 - ラジオボタンとラベルの cursor
 以下の設定で、有効なラジオボタンとラベルの cursor: pointer; の範囲が狭すぎる。
 具体的には、ボタンとラベルのボーダー(輪郭)でしか pointer にならない。
+→ PCの不具合だった模様
 
 - 演習問題の2つを draft にする (?) (アフィリエイト登録対策)
 
@@ -124,15 +125,14 @@ disableKinds:
 - categories の各index.md を作成する
 - categories の各画像 を作成する
 
+- 記事に「無償」「無料」のキーワードを盛り込む
+
 - google で「R SQL 演習問題」だと1位にランクインするが、
   「R SQL 練習問題」だとランク外になる。
-
   時間の経過により「R SQL 練習問題」でもランクインする可能性はある？
 
 - データサイエンス100本ノック＋α
   データフレーム操作とSQLクエリについて、Notebook で動作確認する
-
-- アバター画像の編集
 
 - 各記事に以下を追記する: 
   すべてのコードはコピー＆ペーストでそのまま実行できます。

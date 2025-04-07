@@ -1,4 +1,10 @@
 <meta charset='utf-8'>
+
+{{/*  katsu  */}}
+{{- with .Params.robots -}}
+  <meta name="robots" content="{{ . }}" />
+{{- end }}
+
 <meta name='viewport' content='width=device-width, initial-scale=1'>
 
 {{- $description := partialCached "data/description" . .RelPermalink -}}

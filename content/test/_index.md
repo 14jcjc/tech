@@ -1,10 +1,11 @@
 ---
 title: "test"
 draft: true
-sitemap:
-  priority: 0
-  changefreq: never
-  lastmod: false
-  disable: true
-  # exclude: true
+cascade:
+  robots: "noindex, nofollow"
+  sitemap:
+    priority: 0
+    changefreq: never
+    lastmod: false
+    disable: true
 ---
