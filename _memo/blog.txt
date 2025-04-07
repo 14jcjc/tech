@@ -105,6 +105,10 @@ Stackテーマはブログ向けなので、「記事」として整理すると
 disableKinds: 
   - sitemap
 
+- インデックスから除外
+  robots: "noindex, nofollow"
+  robots.txt の Disallow からは外す
+
 - サイト名の区切り文字を | にする
 
 - favicon の設定方法を PaperMod と同じにする
