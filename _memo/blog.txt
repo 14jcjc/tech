@@ -114,6 +114,7 @@ disableKinds:
 - favicon の設定方法を PaperMod と同じにする
 
 - ファビコン、アバターのデザイン
+  DejaVu Sans Bold を元に.
 
 - Google の検索結果に出るファビコンを確認する！
 
