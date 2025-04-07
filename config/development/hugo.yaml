@@ -132,12 +132,12 @@ languages:
           params: 
             icon: search
         
-        - identifier: "Privacy Policy"
-          name: "Privacy Policy"
-          url: /privacy/
-          weight: 60
-          params: 
-            icon: square-rounded-letter-p
+        # - identifier: "Privacy Policy"
+        #   name: "Privacy Policy"
+        #   url: /privacy/
+        #   weight: 60
+        #   params: 
+        #     icon: square-rounded-letter-p
             # icon: hexagon-letter-p
             # icon: circle-letter-p
             # icon: info-square-rounded

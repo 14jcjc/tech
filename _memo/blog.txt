@@ -121,11 +121,6 @@ disableKinds:
 
 - Google キーワードプランナー (検索ボリューム)
 
-- フッターから以下を削除する: 
-  当サイトは、Amazonのアソシエイトとして適格販売により一定の報酬を得ています。
-
-- Privacy Policy をメニューから外す (?)
-
 - categories の各index.md を作成する
 - categories の各画像 を作成する
 
@@ -223,7 +218,13 @@ q %>% db_get_query(con)
   nullable（NULL 許容） ⇔ non-nullable（NULL 非許容）
   NULL を許容する ⇔ NULL を許容しない
 
-- Amazon審査開始直前に Privacy Policy を index.md-審査開始後 に変更する。
+- Amazon審査開始直前に 
+  - Privacy Policy を index.md-審査開始後 に変更する。
+  - Privacy Policy を menu に追加する。
+  - フッターに以下を記載する: 
+  当サイトは、Amazonのアソシエイトとして適格販売により一定の報酬を得ています。
+
+- Privacy Policy をメニューから外す (?)
 
 - 画像の圧縮（WebP 形式を利用）
 
