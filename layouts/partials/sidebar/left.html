@@ -64,7 +64,13 @@
     <ol class="menu" id="main-menu">
         {{ $currentPage := . }}
         {{ range .Site.Menus.main }}
-        {{/*  {{ println $currentPage.Title }}  */}}
+
+        {{/*  {{ $t := printf "%T" $currentPage.Title }}
+        {{ $i := printf "%T" .Identifier }}
+        Title: [{{ $currentPage.Title }}] ({{ $t }})  
+        Identifier: [{{ .Identifier }}] ({{ $i }})  
+        Equal: {{ eq (string $currentPage.Title) (string .Identifier) }}  */}}
+
         {{/*  {{ println .Name }}  */}}
         {{/*  katsu  */}}
         {{/*  {{ $active := or (eq $currentPage.Title .Name) (or ($currentPage.HasMenuCurrent "main" .) ($currentPage.IsMenuCurrent "main" .)) }}  */}}

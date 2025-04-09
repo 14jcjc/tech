@@ -37,7 +37,7 @@
     {{/*  katsu  */}}
     {{/*  {{ $title = $title | append " - " $siteTitle }}  */}}
     {{ $title = $title | append " | " $siteTitle }}
-    {{ $title = delimit $title "" }}
+    {{/*  {{ $title = delimit $title "" }}  */}}
 {{- else -}}
     {{ $title = printf "%s | %s" $title $siteTitle }}
 {{- end -}}

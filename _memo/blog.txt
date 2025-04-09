@@ -8,7 +8,7 @@ rg -i "@media" ./themes/hugo-theme-stack/assets/scss -uu
 rg -i ".toc" ./themes/hugo-theme-stack -uu
 rg -i ".Draft" ./themes/hugo-theme-stack/ -uu
 rg -i "関連するコンテンツ" ./layouts -uu
-rg -i "share_icons" ./layouts -uu
+rg -i "main-menu" ./layouts -uu
 rg -i "article-title" ./layouts -uu
 
 rg -i "menu" ./themes/hugo-theme-stack/assets/scss -uu

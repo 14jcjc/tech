@@ -214,6 +214,7 @@ languages:
             icon: question
         #   # pre: <i class="fa circle-info"></i>
           
+        # - identifier: "レビュー"
         - identifier: "レビュー"
           name: Review (test)
           url: "/en/categories/%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/"
