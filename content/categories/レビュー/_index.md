@@ -2,8 +2,8 @@
 title: "レビュー"
 description: "レビュー記事一覧"
 # slug: 
-image: c-F2CE0C.svg
+image: c-F6C603.svg
 style:
-    background: "#F2CE0C"
+    background: "#F6C603"
     color: "#fff"
 ---
