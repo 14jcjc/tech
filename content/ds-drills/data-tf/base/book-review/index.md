@@ -11,20 +11,12 @@ categories: ["レビュー", "R & SQL 演習問題 - 基本情報"]
 tags: 
 # tags_weight: 1
 
-# toc: true # Show / hide table of contents of the page.
 # disableShare: false
-
+# toc: true # Show / hide table of contents of the page.
 # ShowToc: true
 # ShowToc: false
 # TocOpen: true
 # TocOpen: false
-
-# style: 
-#   background: #ffff00
-#   color: #0000ff
-
-# background: #ffff00
-# color: #0000ff
 ---
 
 ## はじめに
