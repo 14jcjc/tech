@@ -2,8 +2,8 @@
 title: "レビュー"
 description: "レビュー記事一覧"
 # slug: 
-image: c-F6C603.svg
+image: c-EAC85D.svg
 style:
-    background: "#F6C603"
+    background: "#EAC85D"
     color: "#fff"
 ---
