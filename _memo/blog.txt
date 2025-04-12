@@ -113,16 +113,16 @@ disableKinds:
 
 - Google の検索結果に出るファビコンを確認する！
 
-- カテゴリーとタグのページタイトルを修正する
+- カテゴリーとタグのページタイトルを修正する (?)
   Category: R & SQL 演習問題 - 基本情報 - katsu DS Lab
 
 - プライバシーポリシーを改訂する
   https://dressing.works/privacy/
 
+- 「もしもアフィリエイト」と各ASPに登録する
+
 - twitter のメアドを変更する
   katsu.ds.lab@gmail.com
-
-- 「もしもアフィリエイト」と各ASPに登録する
 
 - アフィリエイトリンクを作成する
 

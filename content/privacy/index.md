@@ -6,6 +6,7 @@ params:
   author: " "
 # summary: privacy policy
 disableShare: true
+ShowToc: false
 # searchHidden: true # Hide page from search
 # ShowBreadCrumbs: false
 ---
