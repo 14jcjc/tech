@@ -84,6 +84,11 @@ summary: の設定より優先度が高いです。
 ```
 → {{% ref2 path="overview" text="これは overview" %}}
 
+```go-html-template
+{{%/* ref2 path="standard/test-ref2.md" pt="../.." */%}}
+```
+→ {{% ref2 path="standard/test-ref2.md" pt="../.." %}}
+
 {{% ref2 path="overview" %}}
 
 {{% ref2 path="overview/index.md#d2" %}}

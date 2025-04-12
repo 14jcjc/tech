@@ -116,12 +116,11 @@ disableKinds:
 - カテゴリーとタグのページタイトルを修正する
   Category: R & SQL 演習問題 - 基本情報 - katsu DS Lab
 
-- ref2 を改訂： ".." を指定可能に
-
 - プライバシーポリシーを改訂する
   https://dressing.works/privacy/
 
-- twitter のアカウントを変更する(フォロワーの多い垢)
+- twitter のメアドを変更する
+  katsu.ds.lab@gmail.com
 
 - 「もしもアフィリエイト」と各ASPに登録する
 

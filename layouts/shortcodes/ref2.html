@@ -1,6 +1,7 @@
 {{- $path := .Params.path -}}
 {{- $text := .Params.text -}}
 {{- $class := .Params.class | default "link" -}}
+{{- $pt := .Params.pt | default ".." -}}
 
 {{- if not $path -}}
   {{ errorf "ref2 shortcode error: 'path' is required." }}
@@ -24,7 +25,7 @@
   {{- $file = path.Join "content" $absPath -}}
 {{- else -}}
   {{- /* 相対パスの場合は変換 */ -}}
-  {{- $path = path.Join ".." $path -}}
+  {{- $path = path.Join $pt $path -}}
   {{- $path = path.Join $currentDir $path | path.Clean -}}
   {{- $file = path.Join "content" $path -}}
 {{- end -}}

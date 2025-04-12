@@ -1,6 +1,6 @@
 ---
 title: 'Test - ref2'
-slug: 'ref2-test'
+slug: 'test-ref2'
 draft: true
 date: '2024-12-28T00:31:23+09:00'
 weight: 110
