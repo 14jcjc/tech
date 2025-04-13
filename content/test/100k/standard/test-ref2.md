@@ -3,7 +3,7 @@ title: 'Test - ref2'
 slug: 'test-ref2'
 draft: true
 date: '2024-12-28T00:31:23+09:00'
-weight: 110
+# weight: 1200
 description: 'This is description.'
 categories: ["Test", "100本ノック+α-test"]
 tags: ["test"]

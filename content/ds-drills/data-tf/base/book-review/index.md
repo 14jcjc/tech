@@ -10,6 +10,7 @@ weight: 10
 categories: ["レビュー", "R & SQL 演習問題 - 基本情報"]
 tags: 
 # tags_weight: 1
+image: book-review.png
 
 # disableShare: false
 # toc: true # Show / hide table of contents of the page.

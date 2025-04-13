@@ -7,13 +7,14 @@ weight: 100
 description: 'This is description.'
 categories: ["Test", "100本ノック+α-test"]
 tags: ["test"]
-
-cover:
+# image: test-16x9.png
+image: image-40x21.png
+# cover:
   # image: "images/papermod-cover.png" #< /static
-  image: "images/ds-drills/cover-100k-standard.png" #< /static
-  relative: false
-  hiddenInList: false
-  hiddenInSingle: false # hide on single page
+  # image: "images/ds-drills/cover-100k-standard.png" #< /static
+  # relative: false
+  # hiddenInList: false
+  # hiddenInSingle: false # hide on single page
   # hidden: true
 disableHLJS: false
 disableShare: false

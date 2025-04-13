@@ -127,7 +127,20 @@ disableKinds:
 - twitter のメアドを変更する
   katsu.ds.lab@gmail.com
 
+- 簡易型バナーを表示する（Googleシグナル未使用時）→ 現状は設置しない
+
 - アフィリエイトリンクを作成する
+
+- 記事の画像を作成する (.png)
+  Hugoでは resources や image processing を使えば .webp 変換も自動で行えます。
+  Twitter（X）やFacebookでは .webp がうまく表示されない場合があります
+  - アイキャッチ画像としては .png or .jpg を使った方が無難
+  - Twitterカード（「Summary Card with Large Image」）では、推奨サイズは 1,200×675ピクセルで
+  - OG画像に最適：1200×630px, 40:21 , 1.905:1
+  - 1920 x 1008 ピクセル
+
+  ウェブ画像のDPIは72や96 DPIで十分です。
+  Canvaで使える16:9テンプレート。
 
 - Google キーワードプランナー (検索ボリューム)
 

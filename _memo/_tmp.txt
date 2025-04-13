@@ -1,4 +1,20 @@
-もしもアフィリエイトでは、
-アフィリエイトリンクのクリック後、24時間以内にカートに入れてから90日以内に購入であれば成果になる？
-
-
+<script>
+window.addEventListener("load", function () {
+	window.cookieconsent.initialise({
+		palette: {
+			popup: { background: "#2e4466", text: "#ffffff" },
+			button: { background: "#00b7c2", text: "#ffffff" }
+		},
+		theme: "classic",
+		type: "info",
+		content: {
+			message: "当サイトでは、Googleアナリティクスを用いてCookieによるアクセス解析を行っています。",
+			dismiss: "OK",
+			link: "プライバシーポリシー",
+			href: "https://katsu-ds-lab.com/privacy/"
+		}
+	});
+});
+</script>
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
