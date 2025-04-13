@@ -1,39 +1,4 @@
-/Users/kk/Home/_work/blog/tech/content/test/100k/base/site-tips/ref2-test.md
-のように　ref2-test.md　を作成したのに、
-ref2-test が public に出力されない。
-
-/Users/kk/Home/_work/blog/tech/content/test/100k/base/site-tips/ref2-test/index.md
-に変更したのに、
-ref2-test が public に出力されない。
-
-
-ref2aaa.md の内容：
-
----
-title: "ref2 - test"
-# slug: "ref2-test"
-draft: true
-lang: ja
-date: "2024-12-28T03:35:33+09:00"
----
-
-test
-
-% tree ./content/test/100k/base/site-tips
-./content/test/100k/base/site-tips
-├── box.png
-├── index.en.md
-├── index.md
-├── index.md-bak
-├── pareto.png
-├── ref2aaa
-│   └── index.md
-├── tree.png
-└── treemap.png
-
-% hugo server --port 1313 --ignoreCache --disableFastRender --cleanDestinationDir --navigateToChanged -D
-を実行。
-
-これで、ref2aaa が public に出力されない。
+もしもアフィリエイトでは、
+アフィリエイトリンクのクリック後、24時間以内にカートに入れてから90日以内に購入であれば成果になる？
 
 

@@ -119,7 +119,10 @@ disableKinds:
 - プライバシーポリシーを改訂する
   https://dressing.works/privacy/
 
-- 「もしもアフィリエイト」と各ASPに登録する
+- 「もしもアフィリエイト」に登録する
+
+- 他のASPに登録する
+  - レントラックスアフィリエイト
 
 - twitter のメアドを変更する
   katsu.ds.lab@gmail.com
