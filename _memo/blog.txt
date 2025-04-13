@@ -131,7 +131,7 @@ disableKinds:
 
 - アフィリエイトリンクを作成する
 
-- 記事の画像を作成する (.png、背景透過色)
+- 記事の画像を作成する (.svg、背景透過色)
   Hugoでは resources や image processing を使えば .webp 変換も自動で行えます。
   Twitter（X）やFacebookでは .webp がうまく表示されない場合があります
   - アイキャッチ画像としては .png or .jpg を使った方が無難
