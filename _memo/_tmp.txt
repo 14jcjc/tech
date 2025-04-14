@@ -24,4 +24,58 @@ https://katsu-ds-lab.com/ds-drills/book-review/cover-book-review_hu1455753513543
 演習問題の記事
 [R & SQL] データサイエンス100本ノック＋α - R-055 (解説)
 のアイキャッチは以下です。
-https://katsu-ds-lab.com/ds-drills/r-055/cover-drills-free.png
+https://katsu-ds-lab.com/images/ds-drills/cover-drills-free.png
+見れる？
+
+「データサイエンス100本ノック＋α」のロゴと「FREE DRILL SERIES」のラベルは入れてないですよ。
+このアイキャッチは、中央にタイトルを入れてますよ。「R & SQL」も入れてますよ。
+背景はドットの市松模様、それにRとSQLのコードを半透明で重ねてます。
+左にRのロゴ、右にSQLのロゴを配置してます。
+確認してね。
+
+
+for (i in 1:30) {
+	no <- sprintf("R-%03d", i)
+	outfile <- sprintf("cover-%s.png", no)
+
+	img_with_text <- image_annotate(
+		img,
+		text = no,
+		color = "white",
+		size = 60,
+		gravity = "southeast",
+		location = "+40+40",
+		font = "Arial Bold"
+	)
+
+	image_write(img_with_text, path = outfile)
+}
+
+#................................................
+
+library(magick)
+
+img <- image_read("your-base-image.png")
+
+# 番号用ラベルのサイズ・位置を調整
+img_with_box <- image_draw(img)
+rect(
+	xleft = 880, ybottom = 660,
+	xright = 1080, ytop = 730,
+	col = rgb(0, 0, 0, 0.6),  # 半透明の黒
+	border = NA
+)
+dev.off()
+
+img_final <- image_annotate(
+	img_with_box,
+	text = "R-055",
+	color = "white",
+	size = 50,
+	font = "Courier New",
+	location = "+40+40",
+	gravity = "southeast"
+)
+
+image_write(img_final, "cover-R-055.png")
+
