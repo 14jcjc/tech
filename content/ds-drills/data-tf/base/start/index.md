@@ -10,6 +10,7 @@ summary: "R & SQL 演習問題集の概要とコード実行環境の構築に�
 # categories: ["実践ドリル(基本情報)"]
 categories: ["R & SQL 演習問題 - 基本情報"]
 # tags: 
+image: cover-start.png
 # disableShare: false
 # UseHugoToc: true
 # ShowToc: true
