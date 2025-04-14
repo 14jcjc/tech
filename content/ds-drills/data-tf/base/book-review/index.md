@@ -10,7 +10,7 @@ weight: 10
 categories: ["レビュー", "R & SQL 演習問題 - 基本情報"]
 tags: 
 # tags_weight: 1
-image: book-review-3.png
+image: cover-book-review.png
 # image: book-review-F6DD71.png
 
 # disableShare: false

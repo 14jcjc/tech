@@ -1,20 +1,16 @@
-<script>
-window.addEventListener("load", function () {
-	window.cookieconsent.initialise({
-		palette: {
-			popup: { background: "#2e4466", text: "#ffffff" },
-			button: { background: "#00b7c2", text: "#ffffff" }
-		},
-		theme: "classic",
-		type: "info",
-		content: {
-			message: "当サイトでは、Googleアナリティクスを用いてCookieによるアクセス解析を行っています。",
-			dismiss: "OK",
-			link: "プライバシーポリシー",
-			href: "https://katsu-ds-lab.com/privacy/"
-		}
-	});
-});
-</script>
-<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+演習問題の記事は次のようになります。
+https://katsu-ds-lab.com/ds-drills/r-055/
+
+演習問題のアイキャッチ画像を以下の条件で作成して。
+
+- サイズ：1200×630px (40:21 , 1.905:1)
+- svg画像
+- 背景透過色
+- 文字は含めない。
+- 生成してもらった画像の中心に、「R & SQL 演習問題」のようなテキストを自分で入れる予定です。
+
+以下を追加して
+- データベースの図
+- いくつかの種類のグラフ
+- R と SQL のデータ加工のコード
+
