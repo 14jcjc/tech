@@ -14,3 +14,14 @@ https://katsu-ds-lab.com/ds-drills/start/
 演習問題のコード実行環境のセットアップのイメージがつくように。
 あと、データをイメージできるように。
 セットアップのイメージを強めに。
+
+
+【レビュー】『データサイエンス100本ノック 構造化データ加工編ガイドブック』
+のアイキャッチ画像は以下にしました。
+https://katsu-ds-lab.com/ds-drills/book-review/cover-book-review_hu14557535135439113293.png
+
+
+演習問題の記事
+[R & SQL] データサイエンス100本ノック＋α - R-055 (解説)
+のアイキャッチは以下です。
+https://katsu-ds-lab.com/ds-drills/r-055/cover-drills-free.png
