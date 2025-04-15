@@ -126,6 +126,9 @@ disableKinds:
 
 - アフィリエイトリンクを作成する
 
+- svg画像作成アプリを使う
+  Inkscape、Vectornator
+
 - 記事の画像を作成する (.svg、背景透過色、圧縮する)
   Hugoでは resources や image processing を使えば .webp 変換も自動で行えます。
   Twitter（X）やFacebookでは .webp がうまく表示されない場合があります
