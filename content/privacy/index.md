@@ -2,9 +2,10 @@
 # title: "Privacy Policy"
 title: "プライバシーポリシー"
 # url: "/privacy/"
-date: 2025-02-23T07:01:20+09:00
+date: 2025-01-06T06:01:20+09:00
 params: 
   author: " "
+type: "post" # 検索インデックスに含まれるようになる
 # summary: privacy policy
 disableShare: true
 ShowToc: false
