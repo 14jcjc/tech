@@ -1,5 +1,6 @@
 ---
-title: "Privacy Policy"
+# title: "Privacy Policy"
+title: "プライバシーポリシー"
 # url: "/privacy/"
 date: 2025-02-23T07:01:20+09:00
 params: 

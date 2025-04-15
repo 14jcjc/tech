@@ -150,7 +150,7 @@ params:
         # HTML is supported -> markdownify に改修: 
         # [Privacy Policy]({{< ref "/privacy" >}})
         customText: |
-          **{{< href-target-blank url="/privacy" text="Privacy Policy" class="link-2" target="_self" >}}**
+          **{{< href-target-blank url="/privacy" text="プライバシーポリシー" class="link-2" target="_self" >}}**
         # <br>
         # 当サイトは、Amazonのアソシエイトとして適格販売により一定の報酬を得ています。
         # </br>
