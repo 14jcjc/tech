@@ -57,8 +57,7 @@ params:
   mainSections:
     - "ds-drills"
     - dev
-    - privacy
-    # - post
+    - post
     # - test
 
 ### Custom menu
