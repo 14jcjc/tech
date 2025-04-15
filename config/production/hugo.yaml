@@ -57,8 +57,9 @@ params:
   mainSections:
     - "ds-drills"
     - dev
-    - test
+    - privacy
     # - post
+    # - test
 
 ### Custom menu
 ### See https://stack.jimmycai.com/config/menu
