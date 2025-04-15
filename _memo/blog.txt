@@ -116,12 +116,9 @@ disableKinds:
 - カテゴリーとタグのページタイトルを修正する (?)
   Category: R & SQL 演習問題 - 基本情報 - katsu DS Lab
 
-- プライバシーポリシーを改訂する
-  https://dressing.works/privacy/
-
-- 「もしもアフィリエイト」に登録する
-
 - 簡易型バナーを表示する（Googleシグナル未使用時）→ 現状は設置しない
+
+- もしもアフィリエイトのAmazon再申請
 
 - 他のASPに登録する
 
@@ -324,6 +321,7 @@ http://localhost:1313/tech-blog/portfolio/
 - 演習問題タイトル, URL
 - カテゴリーを改訂する
 - h2, h3 のレイアウト の2つ目を作成する
+- プライバシーポリシーをサイト検索の対象にする
 
 * widgets のタグ数の limit などを設定
 
