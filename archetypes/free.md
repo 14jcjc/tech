@@ -11,7 +11,6 @@ description: ""
 categories: 
   - "データサイエンス100本ノック＋α"
 tags: 
-  - 
 params:
   question: 
     edition: standard
