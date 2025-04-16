@@ -37,6 +37,10 @@ tableOfContents:
 
 ### データベースへの接続とデータの準備
 
+データベースは前回に続き DuckDB を使用します。DuckDB のメリットについては、以下の記事を参考にしてください。
+
+- {{% ref2 path="/ds-drills/data-tf/base/start#duckdb" text="DuckDB を使用するメリット" %}}
+
 まず、デモ用の売上データ (`df_sales`) と店舗マスタ (`df_master`) を作成し、DuckDB のインメモリデータベースに登録します。  
 (未インストールのパッケージは `install.packages()` でインストールしてください。)  
 
