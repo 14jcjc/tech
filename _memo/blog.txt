@@ -126,16 +126,7 @@ disableKinds:
 
 - アフィリエイトリンクを作成する
 
-- svg画像作成アプリを使う
-  Inkscape、Vectornator
-
-- 
-
-データベースは前回に続き DuckDB を使用します。DuckDB のメリットについては、以下の記事を参考にしてください。
-
-- {{% ref2 path="/ds-drills/data-tf/base/start#duckdb" text="DuckDB を使用するメリット" %}}
-
-
+- カテゴリーの .svg を作成する
 
 - 記事の画像を作成する (.svg、背景透過色、圧縮する)
   Hugoでは resources や image processing を使えば .webp 変換も自動で行えます。
