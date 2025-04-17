@@ -10,7 +10,7 @@ description: "R からデータベースに接続し、データ加工から SQL
 # summary: ""
 categories: ["R & SQL 演習問題 - 基本情報"]
 tags: ["SQL自動生成"]
-# image: rdb.webp
+image: r-sql-auto-query.png
 # disableShare: false
 # ShowReadingTime: false
 # ShowWordCount: false
