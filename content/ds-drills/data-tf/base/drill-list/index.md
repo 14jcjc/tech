@@ -9,6 +9,7 @@ description: "当サイトで紹介している R と SQL の演習問題一覧�
 summary: "当サイトで紹介している R と SQL の演習問題一覧です。"
 categories: ["R & SQL 演習問題 - 基本情報"]
 tags: 
+image: drill-list.png
 toc: true # 目次
 ShowToc: false
 # menu: 
