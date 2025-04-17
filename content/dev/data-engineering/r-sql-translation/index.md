@@ -10,7 +10,7 @@ description: "dplyr を用いたデータベース操作がどのように SQL �
 # summary: ""
 categories: ["R & SQL 演習問題 - 基本情報"]
 tags: ["SQL自動生成"]
-# image: rdb.webp
+image: r-sql-translation.png
 # disableShare: false
 # readingTime: true
 # ShowWordCount: true
