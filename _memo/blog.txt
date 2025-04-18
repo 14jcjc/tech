@@ -138,6 +138,14 @@ disableKinds:
   - 圧縮する
   pngquant --quality=65-80 --speed 1 image.png
 
+cover-book-review
+cover-start
+cover-r-sql-auto-query
+cover-r-sql-translation
+cover-drill-list
+cover-drills-free
+drill-list
+
 - Google キーワードプランナー (検索ボリューム)
 
 - categories の各index.md を作成する
