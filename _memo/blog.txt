@@ -128,6 +128,8 @@ disableKinds:
 
 - カテゴリーの .svg を作成する
 
+- GPT作成の各素材の背景を除去する。
+
 - 記事の画像を作成する (.svg、背景透過色、圧縮する)
   Hugoでは resources や image processing を使えば .webp 変換も自動で行えます。
   Twitter（X）やFacebookでは .webp がうまく表示されない場合があります
