@@ -51,8 +51,8 @@ links:
 ## お問い合わせ
 
 - X (Twitter): {{< href-target-blank url="https://x.com/katsu_ds_lab" text="@katsu_ds_lab" >}}
-- Email: [14rfrf@gmail.com](mailto:14rfrf@gmail.com)
+- Email: [katsu.ds.lab@gmail.com](mailto:katsu.ds.lab@gmail.com)
 
 {{% comment %}}
-- Email: [katsu.ds.lab@gmail.com](mailto:katsu.ds.lab@gmail.com)
+- Email: [14rfrf@gmail.com](mailto:14rfrf@gmail.com)
 {{% /comment %}}
