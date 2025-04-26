@@ -22,8 +22,60 @@ rg -i "favicon" ../save/tech-blog-PaperMod/themes/PaperMod/ -uu
 
 * pngファイル圧縮
 
+cd /Users/kk/Home/_work/blog/tech/_memo/pngquant
+
 pngquant --quality=65-80 --speed 1 cover-start.png
 pngquant --quality=80-100 --speed 1 cover-start.png
+
+pngquant -v --quality=65-90 --speed 1 --ext .png --force cover*.png
+
+cover-book-review.png
+cover-start.png
+cover-drills-free.png
+cover-drill-list.png
+cover-r-sql-auto-query.png
+cover-r-sql-translation.png
+
+for file in cover*.png; do
+  if pngquant --quality=50-90 --speed 1 --output temp.png "$file"; then
+    mv -f temp.png "$file"
+    echo "圧縮成功: $file"
+  else
+    echo "圧縮失敗: $file"
+  fi
+done
+
+dst_dir="/Users/kk/Home/_work/blog/tech/content/ds-drills/data-tf/base/book-review"
+cover_base="cover-book-review"
+mv -f "$dst_dir/${cover_base}.png" "$dst_dir/${cover_base}-bak.png"
+cp "./${cover_base}.png" "$dst_dir/${cover_base}.png"
+
+dst_dir="/Users/kk/Home/_work/blog/tech/content/ds-drills/data-tf/base/drill-list"
+cover_base="cover-drill-list"
+mv -f "$dst_dir/${cover_base}.png" "$dst_dir/${cover_base}-bak.png"
+cp "./${cover_base}.png" "$dst_dir/${cover_base}.png"
+
+dst_dir="/Users/kk/Home/_work/blog/tech/content/ds-drills/data-tf/base/start"
+cover_base="cover-start"
+mv -f "$dst_dir/${cover_base}.png" "$dst_dir/${cover_base}-bak.png"
+cp "./${cover_base}.png" "$dst_dir/${cover_base}.png"
+
+dst_dir="/Users/kk/Home/_work/blog/tech/content/dev/data-engineering/r-sql-auto-query"
+cover_base="cover-r-sql-auto-query"
+mv -f "$dst_dir/${cover_base}.png" "$dst_dir/${cover_base}-bak.png"
+cp "./${cover_base}.png" "$dst_dir/${cover_base}.png"
+
+dst_dir="/Users/kk/Home/_work/blog/tech/content/dev/data-engineering/r-sql-translation"
+cover_base="cover-r-sql-translation"
+mv -f "$dst_dir/${cover_base}.png" "$dst_dir/${cover_base}-bak.png"
+cp "./${cover_base}.png" "$dst_dir/${cover_base}.png"
+
+dst_dir="/Users/kk/Home/_work/blog/tech/static/images/ds-drills"
+cover_base="cover-drills-free"
+mv -f "$dst_dir/${cover_base}.png" "$dst_dir/${cover_base}-bak.png"
+cp "./${cover_base}.png" "$dst_dir/${cover_base}.png"
+
+
 
 #-------------------------------------------------------------------------------
 * tbl() が返すオブジェクト
