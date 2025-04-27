@@ -8,7 +8,7 @@ draft: false
 # draft: true
 weight: 35
 # description: "R からデータベースに接続し、データ加工から SQLクエリ自動生成までの流れについて解説します。"
-description: R と dplyr を使って、データベース接続から SQLクエリ自動生成までをわかりやすく解説！ コーディングの手間を減らしたい人におすすめの内容です。
+description: R と dplyr を使って、データベース接続から SQLクエリ自動生成までを、実例でわかりやすく解説！ コーディングの手間を減らしたい人におすすめの内容です。
 summary: "R からデータベースに接続し、データ加工から SQLクエリ自動生成までの流れについて解説します。"
 # summary: ""
 categories: ["R & SQL 演習問題 - 基本情報"]
