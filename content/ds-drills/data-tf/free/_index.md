@@ -9,5 +9,5 @@ weight: 2
 description: '[R & SQL] データサイエンス100本ノック＋α の演習問題集です。'
 summary: '[R & SQL] データサイエンス100本ノック＋α の演習問題集です。'
 cascade:
-  image: "images/ds-drills/cover-drills-free.png"
+  image: "images/ds-drills/free/cover-drills-free.png"
 ---

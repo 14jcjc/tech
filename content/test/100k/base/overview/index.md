@@ -8,7 +8,7 @@ description: 'This is description.'
 categories: ["Test", "100本ノック+α-test"]
 tags: ["test"]
 # image: test-16x9.png
-image: image-40x21.png
+image: image/image-40x21.png
 # cover:
   # image: "images/papermod-cover.png" #< /static
   # image: "images/ds-drills/cover-100k-standard.png" #< /static
