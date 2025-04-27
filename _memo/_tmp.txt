@@ -79,6 +79,23 @@ img_final <- image_annotate(
 
 image_write(img_final, "cover-R-055.png")
 
+#................................................
+
+次のコードを追記して：
+
+/Users/kk/Home/_work/blog/tech/static/images/ds-drills/free-bak
+があれば削除する。
+
+/Users/kk/Home/_work/blog/tech/static/images/ds-drills/free
+を
+/Users/kk/Home/_work/blog/tech/static/images/ds-drills/free-bak
+にリネームする。
+
+dpath = "./blog/ds-drills/"
+以下に出力した全ての .png ファイルを
+/Users/kk/Home/_work/blog/tech/static/images/ds-drills/free
+にコピーする。
+
 #-------------------------------------------------------------------------------
 
 アイキャッチで利用するモチーフ4個を、一つの .pngファイルで以下の条件で生成して：

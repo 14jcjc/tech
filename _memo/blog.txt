@@ -29,8 +29,7 @@ cover-drill-list.png
 cover-r-sql-auto-query.png
 cover-r-sql-translation.png
 
-pngquant --quality=65-80 --speed 1 cover-start.png
-pngquant --quality=80-100 --speed 1 cover-start.png
+pngquant --quality=70-90 --speed 1 cover-start.png
 
 cd /Users/kk/Home/_work/blog/tech/_memo/pngquant
 lt
@@ -175,11 +174,7 @@ disableKinds:
 
 - 簡易型バナーを表示する（Googleシグナル未使用時）→ 現状は設置しない
 
-- もしもアフィリエイトのAmazon再申請
-
 - 他のASPに登録する
-
-- felmat に返信する！
 
 - アフィリエイトリンクを作成する
 
@@ -197,20 +192,10 @@ disableKinds:
   - 圧縮する
   pngquant --quality=65-80 --speed 1 image.png
 
-cover-book-review
-cover-start
-cover-r-sql-auto-query
-cover-r-sql-translation
-cover-drill-list
-cover-drills-free
-drill-list
-
 - Google キーワードプランナー (検索ボリューム)
 
 - categories の各index.md を作成する
 - categories の各画像 を作成する
-
-- 記事に「無償」「無料」「学習」のキーワードを盛り込む
 
 - google で「R SQL 演習問題」だと1位にランクインするが、
   「R SQL 練習問題」だとランク外になる。
@@ -218,6 +203,10 @@ drill-list
 
 - データサイエンス100本ノック＋α
   データフレーム操作とSQLクエリについて、Notebook で動作確認する
+
+- 「右外部結合」などの文言を入れる
+
+- 記事に「無償」「無料」「学習」のキーワードを盛り込む  
 
 - 各記事に以下を追記する: 
   すべてのコードはコピー＆ペーストでそのまま実行できます。
