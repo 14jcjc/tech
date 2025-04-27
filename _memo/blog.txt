@@ -59,6 +59,11 @@ cover_base="cover-start"
 mv -f "$dst_dir/${cover_base}.png" "$dst_dir/${cover_base}-bak.png"
 cp "./${cover_base}.png" "$dst_dir/${cover_base}.png"
 
+dst_dir="/Users/kk/Home/_work/blog/tech/static/images/ds-drills"
+cover_base="cover-drills-free"
+mv -f "$dst_dir/${cover_base}.png" "$dst_dir/${cover_base}-bak.png"
+cp "./${cover_base}.png" "$dst_dir/${cover_base}.png"
+
 dst_dir="/Users/kk/Home/_work/blog/tech/content/dev/data-engineering/r-sql-auto-query"
 cover_base="cover-r-sql-auto-query"
 mv -f "$dst_dir/${cover_base}.png" "$dst_dir/${cover_base}-bak.png"
@@ -66,11 +71,6 @@ cp "./${cover_base}.png" "$dst_dir/${cover_base}.png"
 
 dst_dir="/Users/kk/Home/_work/blog/tech/content/dev/data-engineering/r-sql-translation"
 cover_base="cover-r-sql-translation"
-mv -f "$dst_dir/${cover_base}.png" "$dst_dir/${cover_base}-bak.png"
-cp "./${cover_base}.png" "$dst_dir/${cover_base}.png"
-
-dst_dir="/Users/kk/Home/_work/blog/tech/static/images/ds-drills"
-cover_base="cover-drills-free"
 mv -f "$dst_dir/${cover_base}.png" "$dst_dir/${cover_base}-bak.png"
 cp "./${cover_base}.png" "$dst_dir/${cover_base}.png"
 
