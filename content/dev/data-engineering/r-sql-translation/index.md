@@ -1,13 +1,15 @@
 ---
 # title: "R でデータベース操作 – dplyr コードはどのように SQLクエリに変換されるか"
-title: "R でデータベース操作 – dplyr は SQL にどう変換される？"
+# title: "R でデータベース操作 – dplyr は SQL にどう変換される？"
+title: "R で簡単データベース操作！ - dplyr は SQL にどう変換されるのか？ 実例で解説"
 slug: "r-sql-translation"
 date: 2025-01-16T01:22:07+09:00
 draft: false
 # draft: true
 weight: 40
-description: "dplyr を用いたデータベース操作がどのように SQL に変換されるかを、具体例を交えて解説します。"
-# summary: ""
+# description: "dplyr を用いたデータベース操作がどのように SQL に変換されるかを、具体例を交えて解説します。"
+description: "dplyr でのデータベース操作が、どのように SQL クエリに変換されるかを実例でわかりやすく解説！ SQL と R を両方活用したい方におすすめの内容です。"
+summary: "dplyr を用いたデータベース操作がどのように SQL に変換されるかを、具体例を交えて解説します。"
 categories: ["R & SQL 演習問題 - 基本情報"]
 tags: ["SQL自動生成"]
 image: cover-r-sql-translation.png

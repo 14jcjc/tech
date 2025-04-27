@@ -1,12 +1,15 @@
 ---
 # Automatic translation from R to SQL query
-title: "R でデータベース操作 – dplyr で SQL クエリを自動生成する"
+# title: "R でデータベース操作 – dplyr で SQL クエリを自動生成する"
+title: "R で簡単データベース操作！ - dplyr で SQL クエリを自動生成する方法"
 slug: "r-sql-auto-query"
 date: 2025-01-12T00:03:13+09:00
 draft: false
 # draft: true
 weight: 35
-description: "R からデータベースに接続し、データ加工から SQLクエリ自動生成までの流れについて解説します。"
+# description: "R からデータベースに接続し、データ加工から SQLクエリ自動生成までの流れについて解説します。"
+description: R と dplyr を使って、データベース接続から SQLクエリ自動生成までをわかりやすく解説！ コーディングの手間を減らしたい人におすすめの内容です。
+summary: "R からデータベースに接続し、データ加工から SQLクエリ自動生成までの流れについて解説します。"
 # summary: ""
 categories: ["R & SQL 演習問題 - 基本情報"]
 tags: ["SQL自動生成"]

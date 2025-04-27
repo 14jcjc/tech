@@ -33,69 +33,6 @@ https://katsu-ds-lab.com/images/ds-drills/cover-drills-free.png
 左にRのロゴ、右にSQLのロゴを配置してます。
 確認してね。
 
-
-for (i in 1:30) {
-	no <- sprintf("R-%03d", i)
-	outfile <- sprintf("cover-%s.png", no)
-
-	img_with_text <- image_annotate(
-		img,
-		text = no,
-		color = "white",
-		size = 60,
-		gravity = "southeast",
-		location = "+40+40",
-		font = "Arial Bold"
-	)
-
-	image_write(img_with_text, path = outfile)
-}
-
-#................................................
-
-library(magick)
-
-img <- image_read("your-base-image.png")
-
-# 番号用ラベルのサイズ・位置を調整
-img_with_box <- image_draw(img)
-rect(
-	xleft = 880, ybottom = 660,
-	xright = 1080, ytop = 730,
-	col = rgb(0, 0, 0, 0.6),  # 半透明の黒
-	border = NA
-)
-dev.off()
-
-img_final <- image_annotate(
-	img_with_box,
-	text = "R-055",
-	color = "white",
-	size = 50,
-	font = "Courier New",
-	location = "+40+40",
-	gravity = "southeast"
-)
-
-image_write(img_final, "cover-R-055.png")
-
-#................................................
-
-次のコードを追記して：
-
-/Users/kk/Home/_work/blog/tech/static/images/ds-drills/free-bak
-があれば削除する。
-
-/Users/kk/Home/_work/blog/tech/static/images/ds-drills/free
-を
-/Users/kk/Home/_work/blog/tech/static/images/ds-drills/free-bak
-にリネームする。
-
-dpath = "./blog/ds-drills/"
-以下に出力した全ての .png ファイルを
-/Users/kk/Home/_work/blog/tech/static/images/ds-drills/free
-にコピーする。
-
 #-------------------------------------------------------------------------------
 
 アイキャッチで利用するモチーフ4個を、一つの .pngファイルで以下の条件で生成して：
@@ -287,3 +224,51 @@ SQLクエリは次のクエリにして：
 SELECT *
   FROM sales
   WHERE amount > 100
+
+#-------------------------------------------------------------------------------
+
+以下の記事が「R SQL」のキーワードにより、Googleで3位にランクインしてます。
+https://katsu-ds-lab.com/dev/r-sql-auto-query/
+ヒット数は 2億5100万件です。
+
+タイトル案
+▶ 「R で簡単データベース操作！dplyr を使って SQL クエリを自動生成する方法」
+
+ディスクリプション案
+▶ 「Rとdplyrを使って、データベース接続からSQLクエリ自動生成までをわかりやすく解説！コーディングの手間を減らしたい人におすすめの内容です。
+
+タイトル
+▶ 「R で簡単データベース操作！ dplyr を使って SQL クエリを自動生成する方法」
+
+ディスクリプション
+▶ 「R と dplyr を使って、データベース接続から SQLクエリ自動生成までをわかりやすく解説！ コーディングの手間を減らしたい人におすすめの内容です。」
+
+
+この記事の続編で以下の記事があります：
+https://katsu-ds-lab.com/dev/r-sql-translation/
+
+これは次のようにしてます：
+title: "R でデータベース操作 – dplyr は SQL にどう変換される？"
+description: "dplyr を用いたデータベース操作がどのように SQL に変換されるかを、具体例を交えて解説します。"
+
+タイトル案
+「R でデータベース操作 – dplyr は SQL にどう変換されるのか？実例で解説」
+
+ディスクリプション案
+「dplyr でのデータベース操作が、どのように SQL クエリに変換されるかを実例でわかりやすく解説！SQLとRを両方活用したい方におすすめの内容です。」
+
+アイキャッチのテキスト案
+▶ 「RでSQL自動生成」
+▶ 「データベース操作を簡単に！」
+この短いテキストは、RとSQL自動生成というポイントを強調し、簡単さを伝えることができます。
+
+アイキャッチのテキスト案
+▶ 「dplyrでSQL変換」
+▶ 「R操作をSQLに変換！」
+こちらは、dplyr と SQL の変換に焦点を当てた短いフレーズで、SQLとRの橋渡しを示す内容です。
+
+
+Rでデータベース操作
+dplyrでSQL変換
+
+# dplyrとSQLの対応
