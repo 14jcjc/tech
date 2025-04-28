@@ -694,3 +694,7 @@ db_result %>%
 **演習問題 :**
 
 - {{% ref2 path="drill-list" %}}
+---
+
+{{< aff/moshimo/ds100kdp >}}
+

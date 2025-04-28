@@ -1559,3 +1559,8 @@ R と SQL を組み合わせることで、より柔軟かつ強力なデータ�
   - {{< href-target-blank url="https://dbplyr.tidyverse.org/articles/translation-verb.html" text="Verb translation" >}}
   - {{< href-target-blank url="https://dbplyr.tidyverse.org/articles/translation-function.html" text="Function translation" >}}
   - {{< href-target-blank url="https://dbplyr.tidyverse.org/reference/" text="Function reference" >}}
+
+---
+
+{{< aff/moshimo/ds100kdp >}}
+
