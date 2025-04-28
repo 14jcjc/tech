@@ -122,6 +122,21 @@ SQL、Python、R の解法を比較することで、異なる言語での実装
 
 興味を持った方は、以下のリンクからチェックできます。
 
+{{% comment %}}
 - {{< product-link id="ds100kdp" platform="amazon" >}}
+{{% /comment %}}
+
+<!-- START MoshimoAffiliateEasyLink -->
+<script type="text/javascript">
+(function(b,c,f,g,a,d,e){b.MoshimoAffiliateObject=a;
+b[a]=b[a]||function(){arguments.currentScript=c.currentScript
+||c.scripts[c.scripts.length-2];(b[a].q=b[a].q||[]).push(arguments)};
+c.getElementById(a)||(d=c.createElement(f),d.src=g,
+d.id=a,e=c.getElementsByTagName("body")[0],e.appendChild(d))})
+(window,document,"script","//dn.msmstatic.com/site/cardlink/bundle.js?20220329","msmaflink");
+msmaflink({"n":"データサイエンス100本ノック構造化データ加工編ガイドブック","b":"","t":"","d":"https:\/\/m.media-amazon.com","c_p":"","p":["\/images\/I\/51ezBMz0iIL._SL500_.jpg"],"u":{"u":"https:\/\/www.amazon.co.jp\/dp\/B0BVRHHK7P","t":"amazon","r_v":""},"v":"2.1","b_l":[{"id":3,"u_tx":"Amazonで見る","u_bc":"#f79256","u_url":"https:\/\/www.amazon.co.jp\/dp\/B0BVRHHK7P","a_id":4983015,"p_id":170,"pl_id":27060,"pc_id":185,"s_n":"amazon","u_so":0},{"id":1,"u_tx":"楽天市場で見る","u_bc":"#f76956","u_url":"https:\/\/search.rakuten.co.jp\/search\/mall\/%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%82%B9100%E6%9C%AC%E3%83%8E%E3%83%83%E3%82%AF%E6%A7%8B%E9%80%A0%E5%8C%96%E3%83%87%E3%83%BC%E3%82%BF%E5%8A%A0%E5%B7%A5%E7%B7%A8%E3%82%AC%E3%82%A4%E3%83%89%E3%83%96%E3%83%83%E3%82%AF\/","a_id":4982953,"p_id":54,"pl_id":27059,"pc_id":54,"s_n":"rakuten","u_so":1},{"id":2,"u_tx":"Yahoo!ショッピングで見る","u_bc":"#66a7ff","u_url":"https:\/\/shopping.yahoo.co.jp\/search?first=1\u0026p=%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%82%B9100%E6%9C%AC%E3%83%8E%E3%83%83%E3%82%AF%E6%A7%8B%E9%80%A0%E5%8C%96%E3%83%87%E3%83%BC%E3%82%BF%E5%8A%A0%E5%B7%A5%E7%B7%A8%E3%82%AC%E3%82%A4%E3%83%89%E3%83%96%E3%83%83%E3%82%AF","a_id":4983016,"p_id":1225,"pl_id":27061,"pc_id":1925,"s_n":"yahoo","u_so":2}],"eid":"HBYp2","s":"s"});
+</script>
+<div id="msmaflink-HBYp2">リンク</div>
+<!-- MoshimoAffiliateEasyLink END -->
 
 ---
