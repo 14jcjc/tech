@@ -193,6 +193,8 @@ msmaflink({"n":"データサイエンス100本ノック構造化データ加工�
 <div id="msmaflink-HBYp2">リンク</div>
 <!-- MoshimoAffiliateEasyLink END -->
 
+- アフィリエイトリンクのチェック
+
 - カテゴリーの .svg を作成する
 
 - 記事の画像を作成する (.svg、背景透過色、圧縮する)
