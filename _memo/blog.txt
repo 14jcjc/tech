@@ -178,7 +178,9 @@ disableKinds:
 レスポンシブを有効にするために、<head>内に以下のタグを設置してください。
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
-https://www.amazon.co.jp/dp/B0BVRHHK7P
+アフィリエイトリンクの「楽天市場で見る」をクリックしたときのURL: 
+
+https://search.rakuten.co.jp/search/mall/%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%82%B9100%E6%9C%AC%E3%83%8E%E3%83%83%E3%82%AF%E6%A7%8B%E9%80%A0%E5%8C%96%E3%83%87%E3%83%BC%E3%82%BF%E5%8A%A0%E5%B7%A5%E7%B7%A8%E3%82%AC%E3%82%A4%E3%83%89%E3%83%96%E3%83%83%E3%82%AF/?scid=af_pc_etc&sc2id=af_103_0_10000645
 
 <!-- START MoshimoAffiliateEasyLink -->
 <script type="text/javascript">
