@@ -1,3 +1,9 @@
+{{/*  
+ページ読み込み完了後に <a> タグへ target="_blank" を追加する.
+IDが msmaflink- から始まる要素を対象.
+1秒ごとに <a> タグができたか確認し、見つかれば target="_blank" を付けて監視を止める.
+*/}}
+
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const interval = setInterval(() => {
