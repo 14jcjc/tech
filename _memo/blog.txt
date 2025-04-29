@@ -195,9 +195,10 @@ msmaflink({"n":"データサイエンス100本ノック構造化データ加工�
 <div id="msmaflink-HBYp2">リンク</div>
 <!-- MoshimoAffiliateEasyLink END -->
 
-- アフィリエイトリンクのチェック
+- - アフィリエイトリンクを別タブで開く
 
-- カテゴリーの .svg を作成する
+- アフィリエイトリンクの動作確認
+  クリックした後に他サイトのリンクを踏むこと！
 
 - 記事の画像を作成する (.svg、背景透過色、圧縮する)
   Hugoでは resources や image processing を使えば .webp 変換も自動で行えます。
@@ -209,7 +210,15 @@ msmaflink({"n":"データサイエンス100本ノック構造化データ加工�
   - 圧縮する
   pngquant --quality=65-80 --speed 1 image.png
 
+検索ボリュームの確認方法
+
 - Google キーワードプランナー (検索ボリューム)
+
+- Ubersuggest
+  ​キーワードの検索ボリュームや関連キーワード、SEO難易度などを確認できます。
+
+- aramakijake.jp
+  ​日本語キーワードの検索ボリュームを調べる際に便利なツールです。
 
 - categories の各index.md を作成する
 - categories の各画像 を作成する
