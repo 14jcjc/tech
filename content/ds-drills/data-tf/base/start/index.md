@@ -358,7 +358,7 @@ R によるデータベース操作や SQL クエリの自動生成について�
 - {{% ref2 path="/dev/data-engineering/r-sql-auto-query" %}}
 - {{% ref2 path="/dev/data-engineering/r-sql-translation" %}}
 
-データベース操作に関連するその他の補足事項を `db_get_query()`、`sql_render_ext()` の使い方と共に以下で説明します。  
+ここでは、データベース操作に関連するその他の補足事項について `db_get_query()`、`sql_render_ext()` の使い方と共に説明します。  
 [環境構築]({{< ref "#setup" >}}) が完了していれば、本セクションのコードはコピー＆ペーストでそのまま実行できます。
 
 ### DuckDB を使用するメリット{#duckdb}

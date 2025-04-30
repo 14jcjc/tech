@@ -5,8 +5,8 @@
 baseURL: "http://localhost:1313/" # 開発環境用の URL
 
 # Include drafts when building.
-# buildDrafts: false
-buildDrafts: true
+buildDrafts: false
+# buildDrafts: true
 
 # languages:
 #     ja:
