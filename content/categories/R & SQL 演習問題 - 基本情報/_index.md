@@ -4,6 +4,6 @@ description: "当サイトで紹介している R と SQL の演習問題に関�
 # slug: 
 image: c-00B0C0.svg
 style:
-    background: "#00B0C0"
+    background: "#01A1B0"
     color: "#fff"
 ---
