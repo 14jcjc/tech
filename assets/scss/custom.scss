@@ -976,39 +976,39 @@
 
 // -------------------------------------------------------------------------------
 
-.easyLink-info-btn {
-	display: flex;
-	justify-content: space-between;
-	gap: 3px;
-	flex-wrap: wrap;
-}
+// .easyLink-info-btn {
+// 	display: flex;
+// 	justify-content: space-between;
+// 	gap: 3px;
+// 	flex-wrap: wrap;
+// }
 
-/* ボタン共通 */
-.easyLink-info-btn a {
-	// flex: 1 1 auto;
-	height: 48px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	text-decoration: none;
-	// box-sizing: border-box;
-	padding: 0 12px;
-	white-space: nowrap;
-}
+// /* ボタン共通 */
+// .easyLink-info-btn a {
+// 	// flex: 1 1 auto;
+// 	height: 48px;
+// 	display: flex;
+// 	align-items: center;
+// 	justify-content: center;
+// 	text-align: center;
+// 	text-decoration: none;
+// 	// box-sizing: border-box;
+// 	padding: 0 12px;
+// 	white-space: nowrap;
+// }
 
-/* PC（横並び） */
-@media (min-width: 1500px) {
-	.easyLink-info-btn {
-		flex-wrap: nowrap;
-	}
+// /* PC（横並び） */
+// @media (min-width: 1500px) {
+// 	.easyLink-info-btn {
+// 		flex-wrap: nowrap;
+// 	}
 
-	.easyLink-info-btn a {
-		// width: 32%;
-    flex: 1 1 calc((100% - 40px) / 3);
-    max-width: calc((100% - 40px) / 3);
-	}
-}
+// 	.easyLink-info-btn a {
+// 		// width: 32%;
+//     flex: 1 1 calc((100% - 40px) / 3);
+//     max-width: calc((100% - 40px) / 3);
+// 	}
+// }
 
 // -------------------------------------------------------------------------------
 // .svglite
