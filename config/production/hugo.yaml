@@ -104,16 +104,16 @@ languages:
             icon: review
 
         - identifier: "Archives"
-          name: Archives
-        # - name: アーカイブ
+          # name: Archives
+          name: アーカイブ
           url: /archives
           weight: 40
           params: 
             icon: archives
         
         - identifier: Search
-          name: Search
-        # - name: 検索
+          # name: Search
+          name: サイト内検索
           url: /search
           weight: 50
           params: 
