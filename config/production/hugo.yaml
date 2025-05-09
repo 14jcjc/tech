@@ -74,14 +74,16 @@ languages:
       main:
         # - identifier: "katsu データサイエンスラボ"
         - identifier: "katsu DS Lab"
-          name: Home
+          # name: Home
+          name: ホーム
           url: /
           weight: -20
           params: 
             icon: home
         
         - identifier: About
-          name: About
+          # name: About
+          name: 当サイトについて 
           url: /about
           weight: -10
           params:
