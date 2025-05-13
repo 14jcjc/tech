@@ -1,6 +1,0 @@
-This favicon was generated using the following font:
-
-- Font Title: Whisper
-- Font Author: undefined
-- Font Source: https://fonts.gstatic.com/s/whisper/v5/q5uHsoqtKftx74K9milCBxxdmYU.ttf
-- Font License: undefined)
