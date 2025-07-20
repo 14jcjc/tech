@@ -2,17 +2,15 @@
 {{ $id := lower .File.ContentBaseName -}}
 title: "{{ .Site.Params.k100.site.rsql }}{{ .Site.Params.k100.site.titleF }} - {{ upper .File.ContentBaseName }} (解説)"
 date: "{{ .Date }}"
-# lastmod:
+lastmod:
 slug: "{{ $id }}"
 # draft: true
 description: ""
 # summary: ""
 # weight: 10
-image: "images/ds-drills/free/cover-drills-free_{{ upper $id }}.png"
 categories: 
   - "データサイエンス100本ノック＋α"
 tags: 
-  - 
 params:
   question: 
     edition: standard
@@ -138,7 +136,7 @@ params:
 データベース操作による結果 (`db_result`) に基づき、自動生成された SQLクエリを `show_query()` で確認できます。
 
 ```r {name="R"}
-db_result %>% show_query(cte = TRUE)
+
 ```
 
 ```sql {name="SQL"}
