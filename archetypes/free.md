@@ -4,7 +4,7 @@ title: "{{ .Site.Params.k100.site.rsql }}{{ .Site.Params.k100.site.titleF }} - {
 date: "{{ .Date }}"
 # lastmod:
 slug: "{{ $id }}"
-# draft: true
+draft: true
 description: ""
 # summary: ""
 # weight: 10
