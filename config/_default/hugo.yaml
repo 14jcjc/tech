@@ -400,13 +400,13 @@ markup:
                 enable: true
                 delimiters:
                     block:
-                        - - \[
-                          - \]
-                        - - $$
-                          - $$
+                        - - '\['
+                          - '\]'
+                        - - '$$'
+                          - '$$'
                     inline:
-                        - - \(
-                          - \)
+                        - - '\('
+                          - '\)'
         parser:
           attribute:
             block: true
