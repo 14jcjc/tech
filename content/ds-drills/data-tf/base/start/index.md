@@ -685,7 +685,7 @@ db_result %>%
 
 - **「{{< param k100.site.titleF >}}」の各演習問題**
   - {{< href-target-blank url="https://github.com/The-Japan-DataScientist-Society/100knocks-preprocess/tree/master/docker/doc" text="GitHub リポジトリ - 演習問題" >}}
-  - 書籍📘『{{< param products.ds100kdp.name >}}』
+  - 📘書籍『{{< param products.ds100kdp.name >}}』
 
 より多くの方々がデータサイエンスのスキルをさらに高める一助となれば幸いです。
 
@@ -697,4 +697,3 @@ db_result %>%
 ---
 
 {{< aff/moshimo/ds100kdp >}}
-
