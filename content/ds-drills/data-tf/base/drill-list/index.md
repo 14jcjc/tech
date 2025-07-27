@@ -10,7 +10,7 @@ summary: "当サイトで紹介している R と SQL の演習問題一覧で�
 categories: ["R & SQL 演習問題 - 基本情報"]
 tags: 
 image: cover-drill-list.png
-toc: true # 目次
+toc: true
 ShowToc: false
 # menu: 
 #     main:
@@ -24,7 +24,7 @@ ShowToc: false
   - **Rコード (データフレーム操作)**
   - **Rコード (データベース操作)**
   - **SQLクエリ**
-- <font color="#F0B007">★</font>の数は難易度を表します。（3 種類のコードから総合的に判定しています。）
+- <font color="#F0B007">★</font>の数は難易度を表します。(3 種類のコードから総合的に判定しています。)
 
 <br>
 
