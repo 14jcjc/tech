@@ -1,7 +1,7 @@
 ---
 # Automatic translation from R to SQL query
 # title: "R でデータベース操作 – dplyr で SQL クエリを自動生成する"
-title: "R で簡単データベース操作！ - dplyr で SQL クエリを自動生成する方法"
+title: "R で簡単データベース操作！ - dplyr で SQL クエリを自動生成"
 slug: "r-sql-auto-query"
 date: 2025-01-12T00:03:13+09:00
 draft: false
