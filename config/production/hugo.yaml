@@ -63,13 +63,21 @@ params:
 ### Custom menu
 ### See https://stack.jimmycai.com/config/menu
 ### To remove about, archive and search page menu item, remove `menu` field from their FrontMatter
+
 languages:
   ja:
     languageName: Japanese
     weight: 1
     params:
         sidebar:
-            subtitle: "R と SQL で学ぶ、データ活用の実践スキル"
+            # subtitle: "R と SQL で学ぶ、データ活用の実践スキル"
+            subtitle: "R・SQLと論理思考の実践スキル"
+            # subtitle: "R・SQLと論理思考で磨く、問題解決の実践スキル"
+            # subtitle: "データサイエンスと論理思考で磨く、問題解決の実践スキル"
+            # subtitle: "データ分析と論理パズルで鍛える、本質的な思考力"
+            # subtitle: "データサイエンスと論理パズルで鍛える、本質的な思考力"
+            # subtitle: "数字に強く、論理に鋭く。データサイエンスと思考の実験室"
+
     menu:
       main:
         # - identifier: "katsu データサイエンスラボ"
