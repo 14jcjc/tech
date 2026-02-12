@@ -1,9 +1,9 @@
 ---
 title: "JAPAN MENSA 会報誌に自作クイズが掲載された話"
 slug: "mensa-quiz"
-date: 2026-02-12T00:04:50+09:00
-# draft: false
-draft: true
+date: 2026-02-13T01:09:50+09:00
+draft: false
+# draft: true
 weight: 7
 description: "知識ではなく「論理」で解くクイズの魅力と、納得感を重視した制作の舞台裏を紹介します。"
 summary: "JAPAN MENSA 会報誌のクイズコーナーに、自作のクイズが掲載されました。知識ではなく「論理」で解くクイズの魅力と、納得感を重視した制作の舞台裏を紹介します。"
