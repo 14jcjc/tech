@@ -40,6 +40,7 @@ permalinks:
     # ds-drills: /ds-practice-drills/:sections[1:]/:slug/
     ds-drills: /ds-drills/:slug/
     dev: /dev/:slug/
+    thinking: /thinking/:slug/
     test: /test/:slug/
     # post: /p/:slug/
     # aaa: /aaa/:year/:month/:slug/
@@ -47,6 +48,7 @@ permalinks:
   section:
     ds-drills: /ds-drills/:sections[last]/
     dev: /dev/:sections[last]/
+    thinking: /thinking/:sections[last]/
     # ds-drills: /ds-practice-drills/:sections[1:]/
     # aaa: /aaa/:year/:month/
     # xxx: /xxx/:sections[1:]/
@@ -57,6 +59,7 @@ params:
   mainSections:
     - "ds-drills"
     - dev
+    - thinking
     - post
     # - test
 

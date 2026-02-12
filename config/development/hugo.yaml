@@ -28,12 +28,14 @@ permalinks:
     hidden-14katsu: /:slug/
     ds-drills: /ds-drills/:slug/
     dev: /dev/:slug/
+    thinking: /thinking/:slug/
     # ds-drills: /ds-practice-drills/:slug/
     # post: /p/:slug/
     # test: /test/:slug/
   section:
     ds-drills: /ds-drills/:sections[last]/
     dev: /dev/:sections[last]/
+    thinking: /thinking/:sections[last]/
     # ds-drills: /ds-drills/:sections[1:]/
     # ds-drills: /ds-practice-drills/:sections[last]/
     # ds-drills: /ds-practice-drills/
@@ -45,6 +47,7 @@ params:
   mainSections:
     - "ds-drills"
     - dev
+    - thinking
     - test
     - post
 
