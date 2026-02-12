@@ -1,6 +1,6 @@
 ---
 title: "JAPAN MENSA 会報誌に自作クイズが掲載された話"
-slug: "mensa-quiz"
+slug: "mensa-quiz-01"
 date: 2026-02-13T01:09:50+09:00
 draft: false
 # draft: true
