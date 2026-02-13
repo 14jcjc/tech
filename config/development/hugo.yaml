@@ -97,7 +97,14 @@ languages:
           params: 
             icon: question
         #   # pre: <i class="fa circle-info"></i>
-          
+        
+        - identifier: "謎解き水平思考クイズ集"
+          name: "謎解き水平思考クイズ集"
+          url: "/thinking/book-umigame"
+          weight: 15
+          params: 
+            icon: question
+
         - identifier: "レビュー"
           name: レビュー (test)
           url: "/categories/%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/"
