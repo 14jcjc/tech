@@ -7,9 +7,9 @@ draft: false
 # summary: 
 # description: 
 # categories: 
-sitemap:
-  priority: 0
-  changefreq: never
-  lastmod: false
-  disable: true
+# sitemap:
+#   priority: 0
+#   changefreq: never
+#   lastmod: false
+#   disable: true
 ---
