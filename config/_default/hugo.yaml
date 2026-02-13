@@ -352,8 +352,8 @@ languages:
           url: https://x.com/katsu_ds_lab
           params:
             # icon: brand-twitter
-            icon: brand-X-black-3
             # icon: brand-X-1
+            icon: brand-X-gray-4
         - identifier: github
           name: GitHub
           url: "https://github.com/katsu-ds-lab"
