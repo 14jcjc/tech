@@ -5,11 +5,12 @@ date: 2025-01-07
 disableShare: true
 ShowToc: false
 links:
-  - title: Twitter
+  - title: X (旧Twitter)
     description: 
     website: https://x.com/katsu_ds_lab/
     # image: https://abs.twimg.com/responsive-web/client-web/icon-svg.168b89da.svg
-    image: twitter.svg
+    # image: twitter.svg
+    image: brand-X-1.svg
   - title: GitHub
     description: 
     website: https://github.com/katsu-ds-lab/
@@ -66,7 +67,7 @@ R を使ったデータ分析やプログラミングが特に好きで、当サ
 
 ## お問い合わせ
 
-- X (Twitter): {{< href-target-blank url="https://x.com/katsu_ds_lab" text="@katsu_ds_lab" >}}
+- X (旧Twitter): {{< href-target-blank url="https://x.com/katsu_ds_lab" text="@katsu_ds_lab" >}}
 - Email: [katsu.ds.lab@gmail.com](mailto:katsu.ds.lab@gmail.com)
 
 {{% comment %}}
