@@ -10,7 +10,7 @@ links:
     website: https://x.com/katsu_ds_lab/
     # image: https://abs.twimg.com/responsive-web/client-web/icon-svg.168b89da.svg
     # image: twitter.svg
-    image: brand-X-1.svg
+    image: brand-X-blue-2.svg
   - title: GitHub
     description: 
     website: https://github.com/katsu-ds-lab/
