@@ -41,9 +41,8 @@ sitemap:
 App Store での Kindle のインストール画面
 </span>
 
----
-
 {{% comment %}}
+---
 **参考記事:** 
 
 - {{< href-target-blank url="../../thinking/book-umigame-vol1" text="納得感にこだわった水平思考クイズを、一冊にまとめました " target="_blank" >}}
