@@ -1744,4 +1744,45 @@ blockquote.alert {
   }
 }
 
+/* Amazonボタン (LP用) : スマホ最適化・幅広版 */
+.btn-amazon {
+  display: flex; /* inline-flex から変更して幅調整しやすく */
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+
+  /* サイズと余白の強化 */
+  width: 80%; /* 親要素いっぱいに広げる（PCでも幅広） */
+  max-width: 320px; /* PCなどで広がりすぎないように制限 */
+  margin: 0 auto; /* 中央寄せ */
+  padding: 16px 24px; /* タップ領域を確保 */
+  border-radius: 8px;
+
+  /* 配色 */
+  background: #1f3a8a; /* 濃いブルー */
+  color: #ffffff !important;
+
+  /* フォント調整 */
+  font-size: 2.0rem; /* 少し大きく */
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 1.4;
+  letter-spacing: 0.05em; /* 視認性アップ */
+  
+  border: 1px solid rgba(255,255,255,0.15);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+  transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.btn-amazon:hover {
+  filter: brightness(1.15);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+}
+
+.btn-amazon:active {
+  filter: brightness(0.9);
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
 //-------------------------------------------------------------------------------
