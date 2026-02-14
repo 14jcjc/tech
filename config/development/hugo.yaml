@@ -105,12 +105,12 @@ languages:
           params: 
             icon: question
 
-        - identifier: "レビュー"
-          name: レビュー (test)
-          url: "/categories/%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/"
-          weight: 20
-          params: 
-            icon: review
+        # - identifier: "レビュー"
+        #   name: レビュー (test)
+        #   url: "/categories/%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/"
+        #   weight: 20
+        #   params: 
+        #     icon: review
 
         - identifier: "データサイエンス100本ノック＋α"
           name: "100k-test"

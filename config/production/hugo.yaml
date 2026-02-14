@@ -108,13 +108,13 @@ languages:
           params: 
             icon: question
         
-        - identifier: "レビュー"
-          name: レビュー
-          url: "/categories/%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/"
-          # url: "/ds100knocks-alpha/book-review/"
-          weight: 20
-          params: 
-            icon: review
+        # - identifier: "レビュー"
+        #   name: レビュー
+        #   url: "/categories/%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/"
+        #   # url: "/ds100knocks-alpha/book-review/"
+        #   weight: 20
+        #   params: 
+        #     icon: review
 
         - identifier: "Archives"
           # name: Archives

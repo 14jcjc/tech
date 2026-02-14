@@ -7,7 +7,10 @@ draft: false
 weight: 10
 # description: ""
 # summary: ""
-categories: ["レビュー", "R & SQL 演習問題 - 基本情報"]
+categories: 
+- "R & SQL 演習問題 - 基本情報"
+# - レビュー
+
 tags: 
 # tags_weight: 1
 image: cover-book-review.png
