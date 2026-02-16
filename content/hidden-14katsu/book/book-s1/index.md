@@ -29,7 +29,7 @@ sitemap:
 
 <div class="gallery-image gallery-base">
   <a href="cover-vol1.jpg" data-width="1600" data-height="2560">
-    <img src="cover-vol1.jpg" alt="Kindle" style="display: block; margin: auto; max-width: 40%; height: auto; border-radius: 4px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+    <img src="cover-vol1.jpg" alt="Kindle" style="display: block; margin: auto; max-width: 60%; height: auto; border-radius: 4px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
   </a>
 </div>
 
@@ -44,7 +44,7 @@ sitemap:
 
 <div class="gallery-image gallery-base">
   <a href="kindle.png" data-width="1037" data-height="501">
-    <img src="kindle.png" alt="Kindle" style="display: block; margin: auto; max-width: 70%; height: auto;">
+    <img src="kindle.png" alt="Kindle" style="display: block; margin: auto; max-width: 90%; height: auto;">
   </a>
 </div>
 <span style="font-size: 0.9em;">
