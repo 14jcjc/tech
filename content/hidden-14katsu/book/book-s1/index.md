@@ -41,7 +41,6 @@ sitemap:
 * iPhone : App Storeで **Kindle** を検索
 * Android : Google Playで **Kindle** を検索
 
-
 <div class="gallery-image gallery-base">
   <a href="kindle.png" data-width="1037" data-height="501">
     <img src="kindle.png" alt="Kindle" style="display: block; margin: auto; max-width: 90%; height: auto;">
