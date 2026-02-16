@@ -29,7 +29,7 @@ sitemap:
 
 <div class="gallery-image gallery-base">
   <a href="cover-vol1.jpg" data-width="1600" data-height="2560">
-    <img src="cover-vol1.jpg" alt="Kindle" style="display: block; margin: auto; max-width: 60%; height: auto; border-radius: 4px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+    <img src="cover-vol1.jpg" alt="Kindle" style="display: block; margin: auto; width: 350px; max-width: 60%; height: auto; border-radius: 4px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
   </a>
 </div>
 
