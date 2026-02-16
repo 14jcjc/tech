@@ -46,9 +46,12 @@ sitemap:
     <img src="kindle.png" alt="Kindle" style="display: block; margin: auto; max-width: 90%; height: auto;">
   </a>
 </div>
-<span style="font-size: 0.9em;">
-App Store での Kindle のインストール画面
-</span>
+
+<div style="text-align: center;">
+  <span style="font-size: 0.9em;">
+    App Store での Kindle のインストール画面
+  </span>
+</div>
 
 {{% comment %}}
 ---

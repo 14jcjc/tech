@@ -38,15 +38,15 @@ MENSA は一定の基準を満たした人が参加する国際的な団体で�
 
 <div class="gallery-image gallery-base">
   <a href="card.png" data-width="1500" data-height="1000">
-    <img src="card.png" alt="JAPAN MENSA 会員カード" style="display: block; margin: auto;">
+    <img src="card.png" alt="JAPAN MENSA 会員カード" style="display: block; margin: auto; width: 380px; max-width: 85%; height: auto;">
   </a>
 </div>
 
-<span style="font-size: 0.9em;">
-JAPAN MENSA 会員カード
-</span>
-
----
+<div style="text-align: center;">
+  <span style="font-size: 0.9em;">
+    JAPAN MENSA 会員カード
+  </span>
+</div>
 
 ## 今回紹介するクイズについて
 
