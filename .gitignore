@@ -35,5 +35,12 @@ _testmain.go
 .DS_Store
 .hugo_build.lock
 resources/_gen/
-*-bak
 *-org
+*-bak
+*-bak1
+*-bak2
+*-bak3
+*-bak4
+*-bak5
+*-bak6
+*-bak7
