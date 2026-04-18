@@ -2,7 +2,7 @@
 title: 謎解き水平思考クイズ VOL.1
 slug: "book-s1"
 description: ""
-date: 2026-04-15T02:08:36+09:00
+date: 2026-04-18T02:18:36+09:00
 draft: false
 # draft: true
 disableShare: true
