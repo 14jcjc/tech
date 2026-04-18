@@ -2,7 +2,7 @@
 title: 謎解き水平思考クイズ VOL.1
 slug: "book-s1"
 description: ""
-date: 2026-02-17T07:08:36+09:00
+date: 2026-04-15T02:08:36+09:00
 draft: false
 # draft: true
 disableShare: true
@@ -18,7 +18,7 @@ sitemap:
 「**謎解き水平思考クイズ VOL.1**」 (電子書籍) のページです ⬇️
 
 <div style="text-align: center; margin: 2rem 0;">
-  <a class="btn-amazon" href="https://amzn.to/4ts7cqy" target="_blank" rel="noopener">
+  <a class="btn-amazon" href="https://amzn.to/4tVnxng" target="_blank" rel="noopener">
     Amazonで見る
   </a>
 </div>
@@ -52,6 +52,8 @@ sitemap:
     App Store での Kindle のインストール画面
   </span>
 </div>
+
+* **Kindle** には「フォントサイズや行間の調整」「複数のしおり」「検索」などの便利な機能があります。
 
 {{% comment %}}
 ---
