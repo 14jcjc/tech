@@ -18,7 +18,7 @@ sitemap:
 「**謎解き水平思考クイズ VOL.1**」 (電子書籍) のページです ⬇️
 
 <div style="text-align: center; margin: 2rem 0;">
-  <a class="btn-amazon" href="https://amzn.to/4tVnxng" target="_blank" rel="noopener">
+  <a class="btn-amazon" href="https://www.amazon.co.jp/dp/B0GX2ZSKPD" target="_blank" rel="noopener">
     Amazonで見る
   </a>
 </div>
