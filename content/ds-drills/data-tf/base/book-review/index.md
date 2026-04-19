@@ -4,7 +4,7 @@ slug: "book-review"
 date: 2025-01-07T21:01:10+09:00
 # draft: true
 draft: false
-weight: 10
+weight: 13
 # description: ""
 # summary: ""
 categories: 

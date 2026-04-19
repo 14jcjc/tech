@@ -4,7 +4,7 @@ slug: "lateral-thinking-book"
 date: 2026-04-17T08:12:17+09:00
 draft: false
 # draft: true
-weight: 5
+weight: 9
 description: "水平思考クイズを、ひとりでも楽しめる形で一冊にまとめることにした背景について紹介します。"
 summary: ""
 categories:
