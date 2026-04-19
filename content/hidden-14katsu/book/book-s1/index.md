@@ -18,7 +18,11 @@ sitemap:
 「**謎解き水平思考クイズ VOL.1**」 (電子書籍) のページです ⬇️
 
 <div style="text-align: center; margin: 2rem 0;">
-  <a class="btn-amazon" href="https://www.amazon.co.jp/dp/B0GX2ZSKPD" target="_blank" rel="noopener">
+  <a class="btn-amazon"
+     href="https://www.amazon.co.jp/dp/B0GX2ZSKPD"
+     target="_blank"
+     rel="noopener"
+     onclick="if(typeof gtag==='function'){gtag('event','click_amazon_link',{book_title:'umigame_vol1',link_location:'book_s1_page',outbound:true});}">
     Amazonで見る
   </a>
 </div>
