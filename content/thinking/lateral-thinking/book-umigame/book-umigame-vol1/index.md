@@ -16,7 +16,8 @@ tags:
 image: cover-book-umigame-vol1.png
 ---
 
-## 水平思考クイズ集の第1巻をKindleで出版しました
+<!-- ## 水平思考クイズ集の第1巻をKindleで出版しました -->
+## 水平思考クイズ集の第1巻をKindleで予約開始しました
 
 多段階ヒント付きの水平思考クイズ集  
 **『謎解き水平思考クイズ VOL.1』** を Kindle で出版しました。
@@ -30,11 +31,11 @@ image: cover-book-umigame-vol1.png
 * 各問題に約10〜20段階のヒント付き
 * ひとりでも遊べる構成
 * 解答のあとに、どこをどう読むと進めやすかったかを振り返れる
-* 通話アプリでのテストプレイと調整を重ねた問題を収録
+* 対話形式でのテストプレイと調整を重ねた問題を収録
 
 ## こんな方に向いています
 
-* 「なるほど」と納得できるウミガメのスープを解きたい
+* 「なるほど」と納得できる水平思考クイズ(ウミガメのスープ)を解きたい
 * スキマ時間に、頭の体操を楽しみたい
 * ひとりでも遊べる水平思考クイズ本を探している
 * 推理や論理パズルが好き
@@ -48,11 +49,24 @@ image: cover-book-umigame-vol1.png
 * 配信日：2026年4月30日
 * 現在：予約注文受付中
 
-## 商品ページはこちら
+<!-- ## 商品ページはこちら -->
 
-{{< aff/moshimo/book-umigame-vol1 >}}
+<!-- background-color: #232F3E; color: #FFFFFF; -->
+
+<div style="text-align: center; margin: 2rem 0;">
+  <a class="btn-amazon"
+    style="display: inline-block; width: 100%; max-width: 400px; padding: 14px 0; box-sizing: border-box;"
+    href="https://www.amazon.co.jp/dp/B0GX2ZSKPD"
+    target="_blank"
+    rel="noopener"
+    onclick="if(typeof gtag==='function'){gtag('event','click_amazon_link',{book_title:'umigame_vol1',link_location:'book_s1_page_v2',outbound:true});}">
+    Amazonで見る
+  </a>
+</div>
 
 {{% comment %}}
 Amazon の商品ページでは、無料サンプルも公開されています。  
 まずは冒頭の問題だけでも、雰囲気を見ていただければと思います。
 {{% /comment %}}
+
+---

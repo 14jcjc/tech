@@ -22,7 +22,7 @@ sitemap:
      href="https://www.amazon.co.jp/dp/B0GX2ZSKPD"
      target="_blank"
      rel="noopener"
-     onclick="if(typeof gtag==='function'){gtag('event','click_amazon_link',{book_title:'umigame_vol1',link_location:'book_s1_page',outbound:true});}">
+     onclick="if(typeof gtag==='function'){gtag('event','click_amazon_link',{book_title:'umigame_vol1',link_location:'book_s1_page_v1',outbound:true});}">
     Amazonで見る
   </a>
 </div>
