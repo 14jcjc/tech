@@ -24,6 +24,17 @@ image: cover-book-umigame-vol1.png
 <!-- **『謎解き水平思考クイズ VOL.1』** を Kindle で出版しました。 -->
 **『謎解き水平思考クイズ VOL.1』** の予約注文を Kindle で開始しました。
 
+<div style="text-align: center; margin: 2rem 0;">
+  <a class="btn-amazon"
+    style="display: inline-block; width: 100%; max-width: 400px; padding: 14px 0; box-sizing: border-box;"
+    href="https://www.amazon.co.jp/dp/B0GX2ZSKPD"
+    target="_blank"
+    rel="noopener"
+    onclick="if(typeof gtag==='function'){gtag('event','click_amazon_link',{book_title:'umigame_vol1',link_location:'book_s1_page_v2',outbound:true});}">
+    Amazonで見る
+  </a>
+</div>
+
 ひとりでも楽しめるように、各問題に**約10〜20段階のヒント**を用意しています。  
 すぐに答えを見るのではなく、必要なところだけ少しずつ開けながら、真相に近づける構成です。
 
