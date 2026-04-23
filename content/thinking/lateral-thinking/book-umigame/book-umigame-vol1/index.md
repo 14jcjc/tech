@@ -6,7 +6,8 @@ date: 2026-04-20T17:22:40+09:00
 draft: false
 weight: 7
 ShowToc: false
-description: "多段階ヒント付きで、ひとりでも楽しめる水平思考クイズ集をKindleで出版しました。収録内容と特徴を紹介します。"
+# description: "多段階ヒント付きで、ひとりでも楽しめる水平思考クイズ集をKindleで出版しました。収録内容と特徴を紹介します。"
+description: "Kindleで出版した、ひとりでも楽しめる水平思考クイズ集の収録内容と特徴を紹介します。"
 summary: ""
 categories:
 - 思考トレーニング
@@ -21,7 +22,6 @@ image: cover-book-umigame-vol1.png
 ## 水平思考クイズ集の第1巻をKindleで予約開始しました
 
 多段階ヒント付きの水平思考クイズ集  
-<!-- **『謎解き水平思考クイズ VOL.1』** を Kindle で出版しました。 -->
 **『謎解き水平思考クイズ VOL.1』** の予約注文を Kindle で開始しました。
 
 <div style="text-align: center; margin: 2rem 0;">
