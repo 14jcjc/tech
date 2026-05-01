@@ -46,8 +46,8 @@ jobs:
       - name: Check Hugo version
         run: hugo version
       
-      # - name: Install Dart Sass
-        # run: sudo snap install dart-sass
+      - name: Install Dart Sass
+        run: sudo snap install dart-sass
       - name: Checkout
         uses: actions/checkout@v4
         with:
