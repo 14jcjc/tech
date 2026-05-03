@@ -32,7 +32,7 @@ image: cover-book-umigame-vol1.png
     target="_blank"
     rel="noopener"
     onclick="if(typeof gtag==='function'){gtag('event','click_amazon_link',{book_title:'umigame_vol1',link_location:'book_s1_page_v2',outbound:true});}">
-    商品ページを見る
+    サンプルを読む
   </a>
 </div>
 
@@ -74,7 +74,7 @@ image: cover-book-umigame-vol1.png
     target="_blank"
     rel="noopener"
     onclick="if(typeof gtag==='function'){gtag('event','click_amazon_link',{book_title:'umigame_vol1',link_location:'book_s1_page_v2',outbound:true});}">
-    商品ページを見る
+    Kindleストアで見る
   </a>
 </div>
 
