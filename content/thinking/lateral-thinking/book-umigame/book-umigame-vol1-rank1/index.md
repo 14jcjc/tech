@@ -1,5 +1,5 @@
 ---
-title: "Kindleストアの「最新リリース」2部門で1位になりました"
+title: "Kindleストアの「最新リリース」2 部門で 1 位になりました"
 slug: "book-umigame-vol1-rank1"
 date: 2026-05-04T18:37:00+09:00
 draft: false
@@ -16,7 +16,7 @@ tags:
 image: book-umigame-vol1-rank1.png
 ---
 
-## Kindleストアの「最新リリース」2部門で1位になりました
+## Kindleストアの「最新リリース」2 部門で 1 位になりました
 
 おかげさまで、Kindleで出版した  
 **『謎解き水平思考クイズ VOL.1』** が、  
