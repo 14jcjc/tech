@@ -13,7 +13,6 @@ categories:
 - 思考トレーニング
 tags:
 - JAPAN MENSA
-- 論理パズル
 - 論理思考
 # - 水平思考クイズ
 image: cover-mensa-article-01.png

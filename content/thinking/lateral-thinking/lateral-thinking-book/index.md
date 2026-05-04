@@ -11,7 +11,7 @@ categories:
 - 思考トレーニング
 tags:
 - 水平思考クイズ
-- 論理パズル
+- Kindle出版
 - 論理思考
 image: cover-lateral-thinking-book.png
 # disableShare: false
