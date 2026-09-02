@@ -99,7 +99,7 @@ timeout: 90s # Timeout for generating page contents, specified as a duration or 
 #   minifyOutput: true
 
 pagination:
-    pagerSize: 10
+    pagerSize: 15
 
 # permalinks:
 #     page: /:slug/
