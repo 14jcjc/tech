@@ -4,7 +4,7 @@ slug: "drill-list"
 date: 2025-02-23T01:01:20+09:00
 draft: false
 # draft: true
-weight: 20
+weight: 9990
 description: "当サイトで紹介している R と SQL の演習問題一覧です。"
 summary: "当サイトで紹介している R と SQL の演習問題一覧です。"
 categories: ["R & SQL 演習問題 - 基本情報"]

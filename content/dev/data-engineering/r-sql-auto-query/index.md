@@ -6,7 +6,7 @@ slug: "r-sql-auto-query"
 date: 2025-01-12T00:03:13+09:00
 draft: false
 # draft: true
-weight: 35
+weight: 9998
 # description: "R からデータベースに接続し、データ加工から SQLクエリ自動生成までの流れについて解説します。"
 description: R と dplyr を用い、データベース接続から SQLクエリ自動生成までを、実例でわかりやすく解説！
 summary: "R からデータベースに接続し、データ加工から SQLクエリ自動生成までの流れについて解説します。"

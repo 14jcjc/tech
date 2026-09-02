@@ -3,7 +3,7 @@ title: "Kindleストアの「最新リリース」2 部門で 1 位になりま�
 slug: "book-umigame-vol1-rank1"
 date: 2026-05-04T18:37:00+09:00
 draft: false
-weight: 6
+weight: 9883
 ShowToc: false
 description: "Kindleで出版した『謎解き水平思考クイズ VOL.1』が、Kindleストアの「雑学・クイズ」「パズル・ゲーム」の最新リリースで 1 位を獲得しました。"
 summary: ""

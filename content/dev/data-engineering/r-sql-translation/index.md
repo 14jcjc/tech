@@ -7,7 +7,7 @@ slug: "r-sql-translation"
 date: 2025-01-16T01:22:07+09:00
 draft: false
 # draft: true
-weight: 40
+weight: 10000
 # description: "R の dplyr コードと SQL の対応を、45 の具体例と共通のシンプルなデータセットで紹介。集計・結合・フィルタリングから、ウィンドウ関数・SQL構文埋め込みなどの応用的な操作まで幅広くカバーします。"
 description: R の dplyr コードと SQL の対応を、共通データセットと 45 の具体例で解説。集計からウィンドウ関数、SQL 構文の埋め込みまで幅広く紹介します。
 summary: "dplyr を用いたデータベース操作がどのように SQL に変換されるかを、具体例を交えて解説します。"
