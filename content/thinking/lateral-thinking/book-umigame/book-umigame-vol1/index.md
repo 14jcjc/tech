@@ -28,17 +28,6 @@ image: cover-book-umigame-vol1.png
 ひとりでも楽しめるように、各問題に**約10〜20段階のヒント**を用意しています。  
 すぐに答えを見るのではなく、必要なところだけ少しずつ開けながら、真相に近づける構成です。
 
-<div style="text-align: center; margin: 2rem 0;">
-  <a class="btn-amazon"
-    style="display: inline-block; width: 100%; max-width: 400px; padding: 14px 0; box-sizing: border-box;"
-    href="https://www.amazon.co.jp/dp/B0GX2ZSKPD"
-    target="_blank"
-    rel="noopener"
-    onclick="if(typeof gtag==='function'){gtag('event','click_amazon_link',{book_title:'umigame_vol1',link_location:'article_top_sample',outbound:true});}">
-    無料サンプルを読む
-  </a>
-</div>
-
 ## 本書の特徴
 
 * 全50問を収録
@@ -123,5 +112,16 @@ Amazonの商品ページで「**無料サンプルを送信**」をタップし�
 ### 3. Kindleアプリで読む
 
 Kindleアプリを開き、ライブラリに表示された本書の表紙をタップすると、無料サンプルを読めます。  
+
+<div style="text-align: center; margin: 2rem 0;">
+  <a class="btn-amazon"
+    style="display: inline-block; width: 100%; max-width: 400px; padding: 14px 0; box-sizing: border-box;"
+    href="https://www.amazon.co.jp/dp/B0GX2ZSKPD"
+    target="_blank"
+    rel="noopener"
+    onclick="if(typeof gtag==='function'){gtag('event','click_amazon_link',{book_title:'umigame_vol1',link_location:'article_free_sample',outbound:true});}">
+    無料サンプルを読む
+  </a>
+</div>
 
 ---
