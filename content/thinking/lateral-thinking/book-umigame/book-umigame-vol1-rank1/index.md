@@ -61,7 +61,7 @@ image: book-umigame-vol1-rank1.png
     href="https://www.amazon.co.jp/dp/B0GX2ZSKPD"
     target="_blank"
     rel="noopener"
-    onclick="if(typeof gtag==='function'){gtag('event','click_amazon_link',{book_title:'umigame_vol1',link_location:'book_s1_page_v3',outbound:true});}">
+    onclick="if(typeof gtag==='function'){gtag('event','click_amazon_link',{book_id:'umigame_vol1',link_location:'article_end',link_purpose:'product_page'});}">
     Kindleストアで見る
   </a>
 </div>

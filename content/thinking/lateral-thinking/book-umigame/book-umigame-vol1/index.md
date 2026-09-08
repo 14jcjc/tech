@@ -66,7 +66,7 @@ Amazon の商品ページでは、**無料サンプル**も公開されていま
     href="https://www.amazon.co.jp/dp/B0GX2ZSKPD"
     target="_blank"
     rel="noopener"
-    onclick="if(typeof gtag==='function'){gtag('event','click_amazon_link',{book_title:'umigame_vol1',link_location:'article_book_info',outbound:true});}">
+    onclick="if(typeof gtag==='function'){gtag('event','click_amazon_link',{book_id:'umigame_vol1',link_location:'book_info',link_purpose:'product_page'});}">
     Kindleストアで見る
   </a>
 </div>
@@ -119,7 +119,7 @@ Kindleアプリを開き、ライブラリに表示された本書の表紙を�
     href="https://www.amazon.co.jp/dp/B0GX2ZSKPD"
     target="_blank"
     rel="noopener"
-    onclick="if(typeof gtag==='function'){gtag('event','click_amazon_link',{book_title:'umigame_vol1',link_location:'article_free_sample',outbound:true});}">
+    onclick="if(typeof gtag==='function'){gtag('event','click_amazon_link',{book_id:'umigame_vol1',link_location:'sample_guide_end',link_purpose:'free_sample'});}">
     無料サンプルを読む
   </a>
 </div>
