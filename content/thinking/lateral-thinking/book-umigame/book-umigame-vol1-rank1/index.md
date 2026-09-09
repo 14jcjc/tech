@@ -55,6 +55,10 @@ image: book-umigame-vol1-rank1.png
 
 **Kindle Unlimited** でもお読みいただけます。
 
+{{< amazon-btn product="umigame_vol1_kindle" location="article_end" purpose="product_page" >}}
+
+{{% comment %}}
+
 <div style="text-align: center; margin: 2rem 0;">
   <a class="btn-amazon"
     style="display: inline-block; width: 100%; max-width: 400px; padding: 14px 0; box-sizing: border-box;"
@@ -65,6 +69,8 @@ image: book-umigame-vol1-rank1.png
     Kindleストアで見る
   </a>
 </div>
+
+{{% /comment %}}
 
 ---
 

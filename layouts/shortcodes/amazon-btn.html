@@ -1,0 +1,118 @@
+{{- $allowedLocations := slice
+  "book_info"
+  "sample_guide_end"
+  "article_end"
+-}}
+
+{{- $allowedPurposes := slice
+  "product_page"
+  "free_sample"
+-}}
+
+{{- $productKey := .Get "product" | default "" -}}
+{{- $location := .Get "location" | default "" -}}
+{{- $purpose := .Get "purpose" | default "" -}}
+{{- $label := .Get "label" | default "Kindleストアで見る" -}}
+
+{{- $errors := slice -}}
+{{- $bookID := "" -}}
+{{- $asin := "" -}}
+
+{{- if not $productKey -}}
+  {{- $errors = $errors | append
+    "product が指定されていません"
+  -}}
+{{- else if not site.Data.book_products -}}
+  {{- $errors = $errors | append
+    "data/book_products.yaml が存在しないか、内容が空です"
+  -}}
+{{- else if not (isset site.Data.book_products $productKey) -}}
+  {{- $errors = $errors | append
+    (printf
+      "商品 %q が data/book_products.yaml にありません"
+      $productKey
+    )
+  -}}
+{{- else -}}
+  {{- $product := index site.Data.book_products $productKey -}}
+  {{- $bookID = printf "%v" ($product.book_id | default "") -}}
+  {{- $asin = printf "%v" ($product.asin | default "") -}}
+
+  {{- if not $bookID -}}
+    {{- $errors = $errors | append
+      (printf "%q の book_id が未設定です" $productKey)
+    -}}
+  {{- else if not (findRE `^[a-z0-9_]+$` $bookID) -}}
+    {{- $errors = $errors | append
+      (printf
+        "%q の book_id が不正です (%q)"
+        $productKey
+        $bookID
+      )
+    -}}
+  {{- end -}}
+
+  {{- if not $asin -}}
+    {{- $errors = $errors | append
+      (printf "%q の asin が未設定です" $productKey)
+    -}}
+  {{- else if not (findRE `^[A-Z0-9]{10}$` $asin) -}}
+    {{- $errors = $errors | append
+      (printf
+        "%q の asin が不正です (%q)"
+        $productKey
+        $asin
+      )
+    -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if not $location -}}
+  {{- $errors = $errors | append
+    "location が指定されていません"
+  -}}
+{{- else if not (in $allowedLocations $location) -}}
+  {{- $errors = $errors | append
+    (printf
+      "location が不正です (%q)。許可値: %s"
+      $location
+      (delimit $allowedLocations ", ")
+    )
+  -}}
+{{- end -}}
+
+{{- if not $purpose -}}
+  {{- $errors = $errors | append
+    "purpose が指定されていません"
+  -}}
+{{- else if not (in $allowedPurposes $purpose) -}}
+  {{- $errors = $errors | append
+    (printf
+      "purpose が不正です (%q)。許可値: %s"
+      $purpose
+      (delimit $allowedPurposes ", ")
+    )
+  -}}
+{{- end -}}
+
+{{- if $errors -}}
+  {{- errorf
+    "amazon-btn: %s [%s]"
+    (delimit $errors " / ")
+    .Position
+  -}}
+{{- else -}}
+<div class="btn-amazon-wrap">
+  <a class="btn-amazon"
+    href="https://www.amazon.co.jp/dp/{{ $asin }}"
+    target="_blank"
+    rel="noopener"
+    data-book-id="{{ $bookID }}"
+    data-asin="{{ $asin }}"
+    data-link-location="{{ $location }}"
+    data-link-purpose="{{ $purpose }}"
+    onclick="if(typeof window.gtag==='function'){var d=this.dataset;window.gtag('event','click_amazon_link',{book_id:d.bookId,asin:d.asin,link_location:d.linkLocation,link_purpose:d.linkPurpose});}">
+    {{- $label -}}
+  </a>
+</div>
+{{- end -}}

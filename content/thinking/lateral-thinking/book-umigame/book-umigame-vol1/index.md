@@ -58,7 +58,11 @@ Amazon の商品ページでは、**無料サンプル**も公開されていま
 
 <!-- ## 商品ページはこちら -->
 
+{{< amazon-btn product="umigame_vol1_kindle" location="book_info" purpose="product_page" >}}
+
 <!-- background-color: #232F3E; color: #FFFFFF; -->
+
+{{% comment %}}
 
 <div style="text-align: center; margin: 2rem 0;">
   <a class="btn-amazon"
@@ -70,6 +74,8 @@ Amazon の商品ページでは、**無料サンプル**も公開されていま
     Kindleストアで見る
   </a>
 </div>
+
+{{% /comment %}}
 
 ## 無料サンプルの読み方
 
@@ -113,6 +119,10 @@ Amazonの商品ページで「**無料サンプルを送信**」をタップし�
 
 Kindleアプリを開き、ライブラリに表示された本書の表紙をタップすると、無料サンプルを読めます。  
 
+{{< amazon-btn product="umigame_vol1_kindle" location="sample_guide_end" purpose="free_sample" label="無料サンプルを読む" >}}
+
+{{% comment %}}
+
 <div style="text-align: center; margin: 2rem 0;">
   <a class="btn-amazon"
     style="display: inline-block; width: 100%; max-width: 400px; padding: 14px 0; box-sizing: border-box;"
@@ -123,5 +133,7 @@ Kindleアプリを開き、ライブラリに表示された本書の表紙を�
     無料サンプルを読む
   </a>
 </div>
+
+{{% /comment %}}
 
 ---
