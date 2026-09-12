@@ -20,7 +20,7 @@ image: cover-mensa-quiz-02.png
 # ShowWordCount: false
 ---
 
-以前、JAPAN MENSA の会報誌（月報）に、自作クイズを掲載していただきました。
+以前、JAPAN MENSA の月刊会報誌に、自作クイズを掲載していただきました。
 
 今回紹介するのは、A君とB君の会話に含まれる条件から、B君の誕生日を導き出す論理パズルです。
 

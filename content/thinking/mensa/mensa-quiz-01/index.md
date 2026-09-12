@@ -69,7 +69,7 @@ MENSAは、所定の基準を満たした人が入会できる国際団体です
 </div>
 
 <span style="font-size: 0.9em;">
-JAPAN MENSA会報誌に掲載されたクイズ
+JAPAN MENSA会報誌に掲載された自作クイズ
 </span>
 
 以下は、画像と同じ内容の問題文です。
