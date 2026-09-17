@@ -115,4 +115,8 @@ image: cover-lateral-thinking-book.png
 このような形でまとめた水平思考クイズ集を、近日中に Amazon の Kindleストアで公開する予定です。  
 正式に出たら、あらためて書籍情報や収録内容をまとめた記事を書きます。
 
+※ 2026年9月17日追記（参考記事）
+
+- {{% ref2 path="/thinking/lateral-thinking/book-umigame/book-umigame-vol1" %}}
+
 ---
