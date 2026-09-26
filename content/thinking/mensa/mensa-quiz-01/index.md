@@ -109,4 +109,9 @@ JAPAN MENSA会報誌に掲載された自作クイズ
 
 ※ 2026年9月12日追記（参考記事）
 
-- {{% ref2 path="../lateral-thinking/book-umigame/book-umigame-vol1" %}}
+ひとりでも楽しめる、多段階ヒント付きの水平思考クイズ集 (ウミガメのスープ) を出版しました。  
+以下の記事で、収録内容や無料サンプルの読み方を紹介しています。
+
+* {{% ref2 path="../lateral-thinking/book-umigame/book-umigame-vol1" %}}
+
+---
