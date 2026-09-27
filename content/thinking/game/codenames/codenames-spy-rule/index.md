@@ -4,7 +4,7 @@ slug: "codenames-spy-rule"
 url: "/codenames-spy-rule/"
 aliases:
   - "/thinking/codenames-spy-rule/"
-description: "通話アプリの仲間と遊ぶ際に採用している、スパイマスターのヒント出しルールについてまとめています。"
+description: "通話アプリの仲間とプレイする際に採用している、スパイマスターのヒント出しルールについてまとめています。"
 date: 2026-09-28T02:41:00+09:00
 draft: false
 # draft: true
