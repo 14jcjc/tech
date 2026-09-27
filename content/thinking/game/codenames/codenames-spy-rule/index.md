@@ -1,20 +1,22 @@
 ---
-title: 【コードネーム】スパイマスターのルール
+title: "【コードネーム】スパイマスターのヒント出しルール"
 slug: "codenames-spy-rule"
-description: "スパイマスターのヒント出しに関するルールです。"
+description: "通話アプリの仲間と遊ぶ際に採用している、スパイマスターのヒント出しルールについてまとめています。"
 date: 2026-09-28T02:41:00+09:00
 draft: false
 # draft: true
 disableShare: true
 # ShowToc: false
 ShowToc: true
+summary: ""
+categories:
+- 思考トレーニング
+tags:
+- コードネーム
 image: codenames-spy-rule.png
-sitemap:
-  priority: 0
-  changefreq: never
-  lastmod: false
-  disable: true
-  # exclude: true
+# disableShare: false
+# ShowReadingTime: false
+# ShowWordCount: false
 ---
 
 ## 基本方針
@@ -28,7 +30,7 @@ sitemap:
 * 「百獣の王」→ 定着した表現なのでOK
 * 「万有引力の法則」→ 専門用語として存在するのでOK
 * 「燃えるもの」→ 単語ではなく説明なのでNG
-* 「谷間天国」→ その場で作った造語なのでNG
+* 「野菜銀河」→ その場で言葉を組み合わせた造語なのでNG
 
 文字数・文字の種類・テーブル上の位置を手がかりにするヒントはNGです。
 
@@ -124,7 +126,7 @@ sitemap:
 
 ### 記号・絵文字を付け加えるのはNG
 
-* 「事後//」→ NG
+* 「秘密♡」→ NG
 * 「怪盗🪽」→ NG
 
 ※ 正式な固有名詞に含まれる記号・絵文字はOKです。
@@ -132,7 +134,7 @@ sitemap:
 ### セリフはNG
 
 * 「駆逐してやる」→ NG
-* 「ぼくドラえもん」→ NG
+* 「オラに元気を分けてくれ」→ NG
 
 ### 外国語であること自体を手がかりにするのはNG
 
