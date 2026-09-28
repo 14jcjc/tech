@@ -107,7 +107,14 @@ languages:
           weight: 10
           params: 
             icon: question
-        
+
+        - identifier: "謎解き水平思考クイズ"
+          name: "謎解き水平思考クイズ"
+          url: "/thinking/book-umigame"
+          weight: 15
+          params: 
+            icon: lateral-thinking-quiz
+
         # - identifier: "レビュー"
         #   name: レビュー
         #   url: "/categories/%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/"

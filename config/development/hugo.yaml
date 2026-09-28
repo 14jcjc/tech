@@ -98,8 +98,8 @@ languages:
             icon: question
         #   # pre: <i class="fa circle-info"></i>
         
-        - identifier: "謎解き水平思考クイズ集"
-          name: "謎解き水平思考クイズ集"
+        - identifier: "謎解き水平思考クイズ"
+          name: "謎解き水平思考クイズ"
           url: "/thinking/book-umigame"
           weight: 15
           params: 
