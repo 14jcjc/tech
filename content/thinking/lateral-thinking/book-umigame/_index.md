@@ -1,5 +1,5 @@
 ---
-title: "謎解き水平思考クイズ集"
+title: "謎解き水平思考クイズ"
 date: 2026-04-20T17:24:32+09:00
 # url: book-umigame
 draft: false
