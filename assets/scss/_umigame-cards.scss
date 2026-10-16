@@ -1,0 +1,112 @@
+/* ウミガメのスープ制作ガイドライン：説明用カード */
+/* CSS としても有効な SCSS。Stack の配色切り替えに連動します。 */
+
+.article-content .umigame-card {
+  --umigame-card-text: #273444;
+  --umigame-card-bg: #eef5fb;
+  --umigame-card-border: #c5d8ea;
+  --umigame-card-title: #2d5d82;
+
+  box-sizing: border-box;
+  max-width: 100%;
+  margin: 1.15em 0;
+  padding: 1em 1.15em;
+  border: 1px solid var(--umigame-card-border);
+  border-radius: 0.75em;
+  background-color: var(--umigame-card-bg);
+  color: var(--umigame-card-text);
+  line-height: 1.85;
+  overflow-wrap: anywhere;
+}
+
+.article-content .umigame-card--answer {
+  --umigame-card-bg: #eff7f3;
+  --umigame-card-border: #cbded3;
+  --umigame-card-title: #3c6c54;
+}
+
+.article-content .umigame-card--problem {
+  --umigame-card-bg: #fbf4ec;
+  --umigame-card-border: #e7d6bf;
+  --umigame-card-title: #805b34;
+}
+
+.article-content .umigame-card--note {
+  --umigame-card-bg: #f2f2f8;
+  --umigame-card-border: #d5d5e6;
+  --umigame-card-title: #5a5b80;
+}
+
+.article-content .umigame-card .umigame-card__title {
+  margin: 0 0 0.65em;
+  color: var(--umigame-card-title);
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.article-content .umigame-card--guidelines .umigame-card__title {
+  font-size: 1.2em;
+}
+
+.article-content .umigame-card .umigame-card__body {
+  color: var(--umigame-card-text);
+}
+
+.article-content .umigame-card .umigame-card__body p {
+  margin: 0 0 0.8em;
+}
+
+.article-content .umigame-card .umigame-card__body ul,
+.article-content .umigame-card .umigame-card__body ol {
+  margin: 0.5em 0 0.85em;
+  padding-left: 1.45em;
+}
+
+.article-content .umigame-card .umigame-card__body li {
+  margin: 0.25em 0;
+}
+
+.article-content .umigame-card .umigame-card__body > :first-child {
+  margin-top: 0;
+}
+
+.article-content .umigame-card .umigame-card__body > :last-child {
+  margin-bottom: 0;
+}
+
+.article-content .umigame-card .umigame-card__body a {
+  color: var(--umigame-card-title);
+}
+
+[data-scheme="dark"] .article-content .umigame-card {
+  --umigame-card-text: #e3eaf2;
+  --umigame-card-bg: #223042;
+  --umigame-card-border: #3b516d;
+  --umigame-card-title: #abc7e6;
+}
+
+[data-scheme="dark"] .article-content .umigame-card--answer {
+  --umigame-card-bg: #22332c;
+  --umigame-card-border: #3d5e4c;
+  --umigame-card-title: #b0d2bd;
+}
+
+[data-scheme="dark"] .article-content .umigame-card--problem {
+  --umigame-card-bg: #362d26;
+  --umigame-card-border: #68523f;
+  --umigame-card-title: #e2c7a8;
+}
+
+[data-scheme="dark"] .article-content .umigame-card--note {
+  --umigame-card-bg: #2c2c3c;
+  --umigame-card-border: #51526f;
+  --umigame-card-title: #c4c5e8;
+}
+
+@media (max-width: 480px) {
+  .article-content .umigame-card {
+    padding: 0.9em 1em;
+    border-radius: 0.65em;
+  }
+}

@@ -1,0 +1,12 @@
+{{- $type := .Get "type" | default "question" -}}
+{{- $titles := dict "question" "Q." "answer" "A." "problem" "問題点" "note" "制作時の注意点" -}}
+{{- if not (isset $titles $type) -}}
+  {{- errorf "umigame-card: type must be question, answer, problem, or note (%s)" .Position -}}
+{{- end -}}
+{{- $title := index $titles $type -}}
+<section class="umigame-card umigame-card--{{ $type }}" aria-label="{{ $title }}">
+  <p class="umigame-card__title">{{ $title }}</p>
+  <div class="umigame-card__body">
+    {{ .Page.RenderString (dict "display" "block") .Inner }}
+  </div>
+</section>
