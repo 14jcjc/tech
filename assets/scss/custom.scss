@@ -1824,6 +1824,15 @@ a.btn-amazon,
   }
 }
 
+// 「ウミガメのスープ制作の十戒」のフォントカラー
+.article-content .umigame-card.umigame-card--guidelines > .umigame-card__title {
+  color: #c2410c;
+}
+
+[data-scheme="dark"] .article-content .umigame-card.umigame-card--guidelines > .umigame-card__title {
+  color: #fdba74;
+}
+
 // .btn-amazon {
 //   display: flex; /* inline-flex から変更して幅調整しやすく */
 //   align-items: center;
