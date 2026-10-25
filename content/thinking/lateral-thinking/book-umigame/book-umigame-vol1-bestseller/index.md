@@ -47,7 +47,7 @@ image: book-umigame-vol1-bestseller.png
 * {{% ref2 path="book-umigame-vol1" %}}
 
 Amazon の商品ページでは無料サンプルも公開されています。  
-**Kindle Unlimited** でもお読みいただけます。
+**Kindle+ ( 旧 Kindle Unlimited )** でもお読みいただけます。
 
 {{< amazon-btn product="umigame_vol1_kindle" location="article_end" purpose="product_page" >}}
 
